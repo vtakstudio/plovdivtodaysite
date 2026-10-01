@@ -7,7 +7,9 @@ export const GET: APIRoute = async ({ site, url }) => {
 	const siteUrl = site ?? new URL(url.origin);
 	const { siteTitle, siteTagline } = resolveBlogSiteIdentity(await getSiteSettings());
 
-	const { entries: posts } = await getEmDashCollection("posts", {
+	const { entries: posts } = await getEmDashCollection("articles", {
+		locale: "bg",
+		status: "published",
 		orderBy: { published_at: "desc" },
 		limit: 20,
 	});
@@ -17,7 +19,7 @@ export const GET: APIRoute = async ({ site, url }) => {
 			if (!post.data.publishedAt) return null;
 			const pubDate = post.data.publishedAt.toUTCString();
 
-			const postUrl = new URL(`/posts/${post.id}`, siteUrl).href;
+			const postUrl = new URL(`/novini/${post.id}`, siteUrl).href;
 			const title = escapeXml(post.data.title || "Untitled");
 			const description = escapeXml(post.data.excerpt || "");
 
@@ -39,7 +41,7 @@ export const GET: APIRoute = async ({ site, url }) => {
     <description>${escapeXml(siteTagline)}</description>
 	<link>${siteUrl.href}</link>
 	<atom:link href="${new URL("/rss.xml", siteUrl).href}" rel="self" type="application/rss+xml"/>
-    <language>en-us</language>
+    <language>bg</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
 ${items}
   </channel>

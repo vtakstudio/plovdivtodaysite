@@ -1,0 +1,5 @@
+---
+interface Props { node: { _key?: string; textAlign?: string }; }
+const { node } = Astro.props;
+---
+<h2 id={node._key ? `heading-${node._key}` : undefined} class:list={[{ "has-text-align-center": node.textAlign === "center", "has-text-align-right": node.textAlign === "right" }]}><slot /></h2>

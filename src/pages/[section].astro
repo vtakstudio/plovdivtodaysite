@@ -1,0 +1,16 @@
+---
+import { getEmDashCollection, getTerm } from "emdash";
+import Newsroom from "../layouts/Newsroom.astro";
+import Archive from "../components/Archive.astro";
+import { sections } from "../utils/newsroom";
+const slug = Astro.params.section;
+if (!sections.some(([key]) => key === slug)) return Astro.rewrite("/404");
+const term = await getTerm("category", slug!, { locale: "bg" });
+if (!term) return Astro.rewrite("/404");
+const result = await getEmDashCollection("articles", { locale: "bg", status: "published", where: { category: term.slug }, orderBy: { published_at: "desc" }, limit: 13, cursor: Astro.url.searchParams.get("cursor") || undefined });
+if (Astro.cache?.enabled) Astro.cache.set(result.cacheHint);
+const weekend = slug === "uikend";
+const title = weekend ? "Уикенд в Пловдив" : term.label;
+const description = weekend ? "Гидове за свободното време в града — култура, разходки и идеи за семейството." : `Последните материали в раздел „${term.label}“.`;
+---
+<Newsroom title={title} description={description}><Archive title={title} description={description} articles={result.entries} nextCursor={result.nextCursor} weekend={weekend} /></Newsroom>

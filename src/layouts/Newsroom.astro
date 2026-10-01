@@ -1,0 +1,88 @@
+---
+import { getMenuWithCacheHint, getSiteSettingsWithCacheHint } from "emdash";
+import { EmDashHead, EmDashBodyStart, EmDashBodyEnd, Image } from "emdash/ui";
+import { createPublicPageContext } from "emdash/page";
+import { Font } from "astro:assets";
+import "../styles/tokens.css";
+import "../styles/theme.css";
+
+interface Props {
+	title: string;
+	pageTitle?: string | null;
+	description?: string | null;
+	image?: string | null;
+	canonical?: string | null;
+	robots?: string | null;
+	content?: { collection: string; id: string; slug: string };
+	publishedTime?: string | null;
+	modifiedTime?: string | null;
+	author?: string | null;
+	breadcrumbs?: { name: string; url: string }[];
+}
+const props = Astro.props;
+const [settingsResult, menuResult] = await Promise.all([
+	getSiteSettingsWithCacheHint(), getMenuWithCacheHint("primary", { locale: "bg" }),
+]);
+if (Astro.cache?.enabled) {
+	Astro.cache.set(settingsResult.cacheHint); Astro.cache.set(menuResult.cacheHint);
+}
+const settings = settingsResult.data;
+const siteTitle = settings.title || "PlovdivToday";
+const fullTitle = props.title.includes(siteTitle) ? props.title : `${props.title} — ${siteTitle}`;
+// The native robots setting is the single prelaunch switch for all templates.
+const prelaunch = /Disallow:\s*\/(?:\s|$)/.test(settings.seo?.robotsTxt || "");
+const siteUrl = settings.url || Astro.url.origin;
+const canonical = props.canonical || new URL(Astro.url.pathname, siteUrl).href;
+const page = createPublicPageContext({
+	Astro, kind: props.content ? "content" : "custom", pageType: props.content ? "article" : "website",
+	title: fullTitle, pageTitle: props.pageTitle || props.title,
+	description: props.description || settings.tagline,
+	canonical, image: props.image, content: props.content,
+	seo: { robots: prelaunch ? "noindex, nofollow" : props.robots },
+	articleMeta: { publishedTime: props.publishedTime, modifiedTime: props.modifiedTime, author: props.author },
+	siteName: siteTitle, siteUrl, breadcrumbs: props.breadcrumbs,
+});
+if (prelaunch) Astro.response.headers.set("X-Robots-Tag", "noindex, nofollow");
+const menu = menuResult.data?.items || [];
+---
+<!doctype html>
+<html lang="bg">
+	<head>
+		<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+		<Font cssVariable="--font-body" preload />
+		<title>{fullTitle}</title><EmDashHead page={page} />
+	</head>
+	<body class="newsroom">
+		<EmDashBodyStart page={page} />
+		<a class="skip-link" href="#main">Към съдържанието</a>
+		{prelaunch && <div class="prelaunch">Демонстрационна версия · Материалите не са реални новини</div>}
+		<header class="masthead">
+			<div class="masthead-top wrap">
+				<a class="brand" href="/" aria-label={`${siteTitle} — начало`}>
+					{settings.logo?.url ? <Image class="desktop-logo" image={{ id: settings.logo.mediaId, src: settings.logo.url, alt: settings.logo.alt || siteTitle }} width={320} height={110} sizes="320px" priority /> : <span class="desktop-brand-name">{siteTitle}</span>}
+					{settings.favicon?.url && <Image class="mobile-logo" image={{ id: settings.favicon.mediaId, src: settings.favicon.url, alt: "" }} width={48} height={48} sizes="48px" priority />}
+					<span class="mobile-brand-name">{siteTitle}</span>
+				</a>
+				<p class="masthead-tagline">{settings.tagline}</p>
+				<a class="latest-link" href="/novini/">Последни новини ↗</a>
+			</div>
+			<nav class="desktop-nav wrap" aria-label="Основна навигация">
+				{menu.map(item => <a href={item.url} aria-current={Astro.url.pathname === item.url ? "page" : undefined}>{item.label}</a>)}
+				<a href="/rayoni/">Райони и квартали</a>
+			</nav>
+			<details class="mobile-nav wrap">
+				<summary>Раздели <span aria-hidden="true">☰</span></summary>
+				<nav aria-label="Мобилна навигация">{menu.map(item => <a href={item.url}>{item.label}</a>)}<a href="/rayoni/">Райони и квартали</a><a href="/novini/">Последни новини</a></nav>
+			</details>
+		</header>
+		<main id="main" tabindex="-1"><slot /></main>
+		<footer class="news-footer">
+			<div class="wrap footer-top">
+				<div><a href="/" class="footer-brand">{siteTitle}</a><p>{settings.tagline}</p></div>
+				<nav aria-label="Навигация в края">{menu.map(item => <a href={item.url}>{item.label}</a>)}<a href="/rayoni/">Райони и квартали</a></nav>
+			</div>
+			<div class="wrap footer-bottom"><small>© {new Date().getFullYear()} {siteTitle}</small><div class="reserved">За нас · Контакти · Редакционни стандарти · Корекции <small>— предстоят</small></div></div>
+		</footer>
+		<EmDashBodyEnd page={page} />
+	</body>
+</html>

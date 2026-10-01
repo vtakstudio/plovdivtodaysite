@@ -1,0 +1,8 @@
+---
+import type { TaxonomyTerm } from "emdash";
+interface Props { terms: TaxonomyTerm[]; }
+const { terms } = Astro.props;
+---
+<ul class="location-tree">
+	{terms.map(term => <li><a href={`/rayoni/${term.slug}/`}>{term.label}</a>{term.children.length > 0 && <Astro.self terms={term.children} />}</li>)}
+</ul>

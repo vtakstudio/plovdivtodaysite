@@ -1,0 +1,10 @@
+---
+import { getTaxonomyTermsWithCacheHint } from "emdash";
+import Newsroom from "../../layouts/Newsroom.astro";
+import LocationTree from "../../components/LocationTree.astro";
+const result = await getTaxonomyTermsWithCacheHint("location", { locale: "bg", includeCounts: false });
+if (Astro.cache?.enabled) Astro.cache.set(result.cacheHint);
+---
+<Newsroom title="Райони и квартали" description="Материали от районите на Пловдив и градовете в областта.">
+	<section class="archive wrap"><h1>Райони и квартали</h1><p class="archive-description">Пловдив и областта, по-близо до вас.</p><LocationTree terms={result.data} /></section>
+</Newsroom>

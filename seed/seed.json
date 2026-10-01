@@ -1,940 +1,2371 @@
 {
-	"$schema": "https://emdashcms.com/seed.schema.json",
-	"version": "1",
-	"meta": {
-		"name": "Blog Starter",
-		"description": "A blog with posts and pages",
-		"author": "EmDash"
-	},
-	"settings": {
-		"title": "My Blog",
-		"tagline": "Thoughts on building for the web"
-	},
-	"collections": [
-		{
-			"slug": "posts",
-			"label": "Posts",
-			"labelSingular": "Post",
-			"urlPattern": "/posts/{slug}",
-			"supports": ["drafts", "revisions", "preview", "scheduling", "search", "seo"],
-			"commentsEnabled": true,
-			"fields": [
-				{
-					"slug": "title",
-					"label": "Title",
-					"type": "string",
-					"required": true,
-					"searchable": true
-				},
-				{
-					"slug": "featured_image",
-					"label": "Featured Image",
-					"type": "image"
-				},
-				{
-					"slug": "content",
-					"label": "Content",
-					"type": "portableText",
-					"searchable": true
-				},
-				{
-					"slug": "excerpt",
-					"label": "Excerpt",
-					"type": "text"
-				}
-			]
-		},
-		{
-			"slug": "pages",
-			"label": "Pages",
-			"labelSingular": "Page",
-			"urlPattern": "/pages/{slug}",
-			"supports": ["drafts", "revisions", "preview", "search", "seo"],
-			"fields": [
-				{
-					"slug": "title",
-					"label": "Title",
-					"type": "string",
-					"required": true,
-					"searchable": true
-				},
-				{
-					"slug": "content",
-					"label": "Content",
-					"type": "portableText",
-					"searchable": true
-				}
-			]
-		}
-	],
-	"taxonomies": [
-		{
-			"name": "category",
-			"label": "Categories",
-			"labelSingular": "Category",
-			"hierarchical": true,
-			"collections": ["posts"],
-			"terms": [
-				{
-					"slug": "development",
-					"label": "Development"
-				},
-				{
-					"slug": "design",
-					"label": "Design"
-				},
-				{
-					"slug": "notes",
-					"label": "Notes"
-				}
-			]
-		},
-		{
-			"name": "tag",
-			"label": "Tags",
-			"labelSingular": "Tag",
-			"hierarchical": false,
-			"collections": ["posts"],
-			"terms": [
-				{
-					"slug": "webdev",
-					"label": "Web Development"
-				},
-				{
-					"slug": "opinion",
-					"label": "Opinion"
-				},
-				{
-					"slug": "tools",
-					"label": "Tools"
-				},
-				{
-					"slug": "creativity",
-					"label": "Creativity"
-				}
-			]
-		}
-	],
-	"bylines": [
-		{
-			"id": "byline-editorial",
-			"slug": "emdash-editorial",
-			"displayName": "EmDash Editorial"
-		},
-		{
-			"id": "byline-guest",
-			"slug": "guest-contributor",
-			"displayName": "Guest Contributor",
-			"isGuest": true
-		}
-	],
-	"menus": [
-		{
-			"name": "primary",
-			"label": "Primary Navigation",
-			"items": [
-				{
-					"type": "custom",
-					"label": "Home",
-					"url": "/"
-				},
-				{
-					"type": "custom",
-					"label": "About",
-					"url": "/pages/about"
-				},
-				{
-					"type": "custom",
-					"label": "Posts",
-					"url": "/posts"
-				}
-			]
-		}
-	],
-	"widgetAreas": [
-		{
-			"name": "sidebar",
-			"label": "Sidebar",
-			"description": "Widget area displayed on single post pages",
-			"widgets": [
-				{
-					"type": "component",
-					"componentId": "core:search",
-					"title": "Search"
-				},
-				{
-					"type": "component",
-					"componentId": "core:categories",
-					"title": "Categories"
-				},
-				{
-					"type": "component",
-					"componentId": "core:tags",
-					"title": "Tags"
-				},
-				{
-					"type": "component",
-					"componentId": "core:recent-posts",
-					"title": "Recent Posts",
-					"settings": {
-						"count": 5,
-						"showDate": true
-					}
-				},
-				{
-					"type": "component",
-					"componentId": "core:archives",
-					"title": "Archives",
-					"settings": {
-						"type": "monthly",
-						"limit": 6
-					}
-				}
-			]
-		},
-		{
-			"name": "footer",
-			"label": "Footer",
-			"description": "Widget area displayed in the site footer",
-			"widgets": [
-				{
-					"type": "content",
-					"title": "About",
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "A blog about software, design, and the occasional stray thought.",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						}
-					]
-				}
-			]
-		}
-	],
-	"sections": [
-		{
-			"slug": "newsletter-signup",
-			"title": "Newsletter Signup",
-			"description": "A call-to-action block for newsletter subscriptions",
-			"keywords": ["newsletter", "subscribe", "email", "cta"],
-			"source": "theme",
-			"content": [
-				{
-					"_type": "block",
-					"style": "h3",
-					"children": [
-						{
-							"_type": "span",
-							"text": "Stay in the loop",
-							"_key": "k1"
-						}
-					],
-					"_key": "k0"
-				},
-				{
-					"_type": "block",
-					"style": "normal",
-					"children": [
-						{
-							"_type": "span",
-							"text": "Get notified when new posts are published. No spam, unsubscribe anytime.",
-							"_key": "k3"
-						}
-					],
-					"_key": "k2"
-				}
-			]
-		},
-		{
-			"slug": "about-author",
-			"title": "About the Author",
-			"description": "Brief author bio for use in posts or pages",
-			"keywords": ["author", "bio", "about"],
-			"source": "theme",
-			"content": [
-				{
-					"_type": "block",
-					"style": "normal",
-					"children": [
-						{
-							"_type": "span",
-							"text": "A software developer who writes about building things on the web. Based somewhere with good coffee and reliable internet.",
-							"_key": "k1"
-						}
-					],
-					"_key": "k0"
-				}
-			]
-		}
-	],
-	"content": {
-		"pages": [
-			{
-				"id": "about",
-				"slug": "about",
-				"status": "published",
-				"data": {
-					"title": "About",
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "A place for writing about software, design, and the occasional stray thought. No posting schedule, no newsletter funnel. Just things I wanted to write down.",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Built with Astro and EmDash. The source is open if you want to see how it works.",
-									"_key": "k3"
-								}
-							],
-							"_key": "k2"
-						}
-					]
-				}
-			}
-		],
-		"posts": [
-			{
-				"id": "post-1",
-				"slug": "building-for-the-long-term",
-				"status": "published",
-				"data": {
-					"title": "Building for the Long Term",
-					"excerpt": "The frameworks will change. The databases will change. What survives is the clarity of your thinking.",
-					"featured_image": {
-						"$media": {
-							"url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=800&fit=crop",
-							"alt": "Code on a monitor in a dark room",
-							"filename": "building-long-term.jpg"
-						}
-					},
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Every few years the industry collectively decides that everything we've been doing is wrong and there's a better way. New frameworks, new paradigms, new build tools. The churn is relentless, and if you're not careful, you spend more time migrating than building.",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "I've been writing software long enough to have seen several of these cycles. jQuery to Backbone to Angular to React to whatever comes next. Each transition felt urgent at the time. Looking back, the things that actually mattered were rarely about the framework.",
-									"_key": "k3"
-								}
-							],
-							"_key": "k2"
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "What survives",
-									"_key": "k5"
-								}
-							],
-							"_key": "k4"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Clean data models survive. Clear boundaries between systems survive. Good naming survives. The decision to keep things simple when you could have made them clever - that definitely survives.",
-									"_key": "k7"
-								}
-							],
-							"_key": "k6"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "What doesn't survive is code that was written to impress, abstractions built for problems that never materialized, and architectures designed around a framework's opinions rather than the domain's reality.",
-									"_key": "k9"
-								}
-							],
-							"_key": "k8"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The best code I've written is boring. It reads like prose, does one thing well, and doesn't require a PhD in category theory to understand. The worst code I've written was technically impressive at the time.",
-									"_key": "k11"
-								}
-							],
-							"_key": "k10"
-						}
-					]
-				},
-				"bylines": [
-					{
-						"byline": "byline-editorial"
-					},
-					{
-						"byline": "byline-guest",
-						"roleLabel": "Guest essay"
-					}
-				],
-				"taxonomies": {
-					"category": ["development"],
-					"tag": ["opinion"]
-				}
-			},
-			{
-				"id": "post-2",
-				"slug": "the-case-for-static",
-				"status": "published",
-				"data": {
-					"title": "The Case for Static",
-					"excerpt": "Static sites aren't a step backwards. They're what you get when you take performance and simplicity seriously.",
-					"featured_image": {
-						"$media": {
-							"url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&h=800&fit=crop",
-							"alt": "Laptop and coffee on a wooden table",
-							"filename": "case-for-static.jpg"
-						}
-					},
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "There's a certain irony in the fact that the web started static, went dynamic, and is now swinging back toward static again. But the static sites of today aren't the hand-coded HTML pages of 1998. They're generated, optimized, and deployed to edge networks that serve them in milliseconds.",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The pitch for server-rendered everything was compelling: dynamic content, personalization, real-time data. But most sites don't need most of that most of the time. A blog post doesn't need to be rendered on every request. A product page doesn't change every second.",
-									"_key": "k3"
-								}
-							],
-							"_key": "k2"
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The performance argument",
-									"_key": "k5"
-								}
-							],
-							"_key": "k4"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "A static file served from a CDN is as fast as the web gets. No cold starts, no database queries, no server-side rendering overhead. The Time to First Byte is essentially the network latency to your nearest edge node. You can't beat physics.",
-									"_key": "k7"
-								}
-							],
-							"_key": "k6"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "And when you do need dynamic behavior, you can add it surgically. An island of interactivity in a sea of static HTML. The best of both worlds, without paying the cost of either at all times.",
-									"_key": "k9"
-								}
-							],
-							"_key": "k8"
-						}
-					]
-				},
-				"bylines": [
-					{
-						"byline": "byline-editorial"
-					}
-				],
-				"taxonomies": {
-					"category": ["development"],
-					"tag": ["webdev", "opinion"]
-				}
-			},
-			{
-				"id": "post-3",
-				"slug": "learning-in-public",
-				"status": "published",
-				"data": {
-					"title": "Learning in Public",
-					"excerpt": "Writing about what you're learning is the fastest way to find out what you don't actually understand.",
-					"featured_image": {
-						"$media": {
-							"url": "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=1200&h=800&fit=crop",
-							"alt": "Notebook and pen on a desk",
-							"filename": "learning-in-public.jpg"
-						}
-					},
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "I started writing about things I was learning not because I had anything original to say, but because I kept forgetting what I'd figured out. The blog posts were notes to my future self, published publicly more out of laziness than courage.",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "What I didn't expect was how much the writing itself would accelerate the learning. There's a particular kind of clarity that comes from trying to explain something to someone else. The gaps in your understanding, which you can happily ignore when the knowledge lives only in your head, become painfully obvious when you try to put it into sentences.",
-									"_key": "k3"
-								}
-							],
-							"_key": "k2"
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The fear of being wrong",
-									"_key": "k5"
-								}
-							],
-							"_key": "k4"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The biggest barrier isn't time or writing skill. It's the fear of publishing something that turns out to be wrong. But here's the thing: being wrong publicly is one of the most efficient ways to learn. Someone will correct you, often kindly, and you'll remember that correction forever.",
-									"_key": "k7"
-								}
-							],
-							"_key": "k6"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The posts that helped me most weren't written by experts. They were written by people one step ahead of me on the same path, in language that hadn't yet been polished into abstraction. There's a place for that kind of writing, and it's more valuable than most people realize.",
-									"_key": "k9"
-								}
-							],
-							"_key": "k8"
-						}
-					]
-				},
-				"taxonomies": {
-					"category": ["notes"],
-					"tag": ["opinion"]
-				}
-			},
-			{
-				"id": "post-4",
-				"slug": "small-tools-big-impact",
-				"status": "published",
-				"data": {
-					"title": "Small Tools, Big Impact",
-					"excerpt": "The best developer tools do one thing well and get out of your way. A love letter to focused software.",
-					"featured_image": {
-						"$media": {
-							"url": "https://images.unsplash.com/photo-1575026615908-666710ae5e47?w=1200&h=800&fit=crop",
-							"alt": "Wrenches and hand tools hanging on a workshop wall",
-							"filename": "small-tools.jpg"
-						}
-					},
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "There's a class of software that doesn't get enough appreciation. Not the frameworks or the platforms or the IDEs, but the small, sharp tools that solve one problem so well you stop thinking about them. They become invisible, which is the highest compliment you can pay a tool.",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "I'm talking about things like ripgrep, which searches code so fast it changed how I think about searching. Or jq, which makes JSON feel like a first-class data format in the terminal. Or curl, which has been quietly powering the internet's plumbing for decades.",
-									"_key": "k3"
-								}
-							],
-							"_key": "k2"
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The Unix philosophy, revisited",
-									"_key": "k5"
-								}
-							],
-							"_key": "k4"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Do one thing well. The advice is old enough to be a cliche, but the best modern tools still follow it. They don't try to be platforms. They don't have plugin ecosystems or configuration languages or startup wizards. They do their job and they compose with other tools that do theirs.",
-									"_key": "k7"
-								}
-							],
-							"_key": "k6"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The temptation is always to add more. One more feature, one more option, one more integration. But every addition is a decision someone has to make, a path through the code that has to be maintained, a thing that can break. The best tools resist this. They stay small, and in staying small, they stay reliable.",
-									"_key": "k9"
-								}
-							],
-							"_key": "k8"
-						}
-					]
-				},
-				"taxonomies": {
-					"category": ["development"],
-					"tag": ["tools"]
-				}
-			},
-			{
-				"id": "post-5",
-				"slug": "designing-with-constraints",
-				"status": "published",
-				"data": {
-					"title": "Designing with Constraints",
-					"excerpt": "Limitations aren't obstacles to creativity. They're the structure that makes creativity possible.",
-					"featured_image": {
-						"$media": {
-							"url": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=1200&h=800&fit=crop",
-							"alt": "Pencils and design tools on a desk",
-							"filename": "designing-with-constraints.jpg"
-						}
-					},
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Give a designer a blank canvas and unlimited time, and they'll often produce something mediocre. Give them a tight brief, a small screen, and a deadline, and they'll surprise you. This isn't a paradox - it's how creativity actually works.",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Constraints force decisions. When you can't use more than two typefaces, you have to choose carefully. When the page has to load in under a second, every element earns its place. When the interface has to work on a 320px screen, you discover what's truly essential.",
-									"_key": "k3"
-								}
-							],
-							"_key": "k2"
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Embracing the box",
-									"_key": "k5"
-								}
-							],
-							"_key": "k4"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The web itself is a constraint. HTML flows in one direction. CSS has a box model. Browsers have viewport sizes and font rendering quirks. You can fight these constraints or you can work with them, and the results are dramatically different.",
-									"_key": "k7"
-								}
-							],
-							"_key": "k6"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The designs I admire most don't look like they were forced through a framework. They look like they grew naturally from the medium, respecting its grain rather than working against it. That only happens when you treat constraints as creative partners rather than enemies.",
-									"_key": "k9"
-								}
-							],
-							"_key": "k8"
-						}
-					]
-				},
-				"taxonomies": {
-					"category": ["design"],
-					"tag": ["creativity"]
-				}
-			},
-			{
-				"id": "post-6",
-				"slug": "a-weekend-with-a-side-project",
-				"status": "published",
-				"data": {
-					"title": "A Weekend with a Side Project",
-					"excerpt": "No stakeholders, no deadlines, no Jira tickets. Just you and a dumb idea that might turn into something.",
-					"featured_image": {
-						"$media": {
-							"url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=800&fit=crop",
-							"alt": "Code on a screen with a dark theme",
-							"filename": "weekend-side-project.jpg"
-						}
-					},
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Saturday morning. Coffee's made, the house is quiet, and I've got an idea that's been nagging at me all week. Not a good idea, necessarily - just a persistent one. A small tool that does a thing I keep doing manually. How hard could it be?",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "This is the best kind of programming. No requirements document, no sprint planning, no pull request reviews. Just a text editor and a problem. The freedom to make terrible architectural decisions, rewrite everything twice, and follow tangents that turn out to be dead ends.",
-									"_key": "k3"
-								}
-							],
-							"_key": "k2"
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Why side projects matter",
-									"_key": "k5"
-								}
-							],
-							"_key": "k4"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Side projects are where you learn things your day job would never teach you. Not because the problems are harder, but because you're free to take risks. Try a language you've never used. Build something without a framework. Deploy to a platform you've only read about. The stakes are zero, which makes the learning maximum.",
-									"_key": "k7"
-								}
-							],
-							"_key": "k6"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "By Sunday evening, the thing sort of works. It's rough, the error handling is nonexistent, and the README is a single sentence. But it solves the problem I set out to solve, and I learned three things I didn't know on Friday. Not a bad weekend.",
-									"_key": "k9"
-								}
-							],
-							"_key": "k8"
-						}
-					]
-				},
-				"taxonomies": {
-					"category": ["development"],
-					"tag": ["creativity"]
-				}
-			},
-			{
-				"id": "post-7",
-				"slug": "notes-on-simplicity",
-				"status": "published",
-				"data": {
-					"title": "Notes on Simplicity",
-					"excerpt": "Simplicity isn't the absence of complexity. It's the result of understanding a problem well enough to solve it cleanly.",
-					"featured_image": {
-						"$media": {
-							"url": "https://images.unsplash.com/photo-1559051668-e1fa58f25786?w=1200&h=800&fit=crop",
-							"alt": "Geometric pattern carved into white paper",
-							"filename": "notes-on-simplicity.jpg"
-						}
-					},
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Every piece of software starts simple. A few files, a clear purpose, a small surface area. Then features get added, edge cases get handled, and before long you're looking at something that requires a diagram to understand. This isn't inevitable, but it takes discipline to prevent.",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The hard part of simplicity isn't the initial design. It's the ongoing resistance to complication. Every feature request, every bug fix, every refactor is an opportunity to add complexity. Saying no is the most important design skill, and the least celebrated.",
-									"_key": "k3"
-								}
-							],
-							"_key": "k2"
-						},
-						{
-							"_type": "block",
-							"style": "h2",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Removing as a feature",
-									"_key": "k5"
-								}
-							],
-							"_key": "k4"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "The best version of a product often has fewer features than the previous one. Not because features were missing, but because someone had the courage to remove things that weren't earning their keep. Every feature has a cost - in maintenance, in cognitive load, in the weight of the interface.",
-									"_key": "k7"
-								}
-							],
-							"_key": "k6"
-						},
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "Simplicity is a practice, not a destination. You never arrive at simple. You just keep asking: is this necessary? Could this be clearer? Is there a way to solve this problem by removing something instead of adding something? The answer is yes more often than you'd expect.",
-									"_key": "k9"
-								}
-							],
-							"_key": "k8"
-						}
-					]
-				},
-				"taxonomies": {
-					"category": ["notes"],
-					"tag": ["opinion"]
-				}
-			},
-			{
-				"id": "post-draft",
-				"slug": "work-in-progress",
-				"status": "draft",
-				"data": {
-					"title": "Work in Progress",
-					"excerpt": "This post is still being written.",
-					"content": [
-						{
-							"_type": "block",
-							"style": "normal",
-							"children": [
-								{
-									"_type": "span",
-									"text": "This is a draft post that won't appear in the public listing.",
-									"_key": "k1"
-								}
-							],
-							"_key": "k0"
-						}
-					]
-				}
-			}
-		]
-	}
+  "version": "1",
+  "meta": {
+    "name": "PlovdivToday",
+    "description": "Bulgarian newsroom foundation"
+  },
+  "settings": {
+    "title": "PlovdivToday",
+    "tagline": "Пловдив, днес. Новините от града и региона.",
+    "timezone": "Europe/Sofia",
+    "seo": {
+      "robotsTxt": "User-agent: *\nDisallow: /\n"
+    }
+  },
+  "collections": [
+    {
+      "slug": "articles",
+      "label": "Статии",
+      "labelSingular": "Статия",
+      "urlPattern": "/novini/{slug}",
+      "supports": [
+        "drafts",
+        "revisions",
+        "preview",
+        "scheduling",
+        "search",
+        "seo"
+      ],
+      "commentsEnabled": false,
+      "fields": [
+        {
+          "slug": "title",
+          "label": "Заглавие",
+          "type": "string",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "excerpt",
+          "label": "Резюме",
+          "type": "text",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "content",
+          "label": "Текст",
+          "type": "portableText",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "featured_image",
+          "label": "Основна снимка",
+          "type": "image"
+        },
+        {
+          "slug": "image_caption",
+          "label": "Надпис на снимката",
+          "type": "string"
+        },
+        {
+          "slug": "image_credit",
+          "label": "Автор / права на снимката",
+          "type": "string"
+        },
+        {
+          "slug": "source_name",
+          "label": "Източник",
+          "type": "string"
+        },
+        {
+          "slug": "source_url",
+          "label": "Адрес на източника",
+          "type": "string",
+          "validation": {
+            "pattern": "^https?://"
+          }
+        },
+        {
+          "slug": "featured",
+          "label": "Водеща на началната страница",
+          "type": "boolean",
+          "defaultValue": false
+        },
+        {
+          "slug": "breaking",
+          "label": "Кратка извънредна новина",
+          "type": "boolean",
+          "defaultValue": false
+        },
+        {
+          "slug": "story_key",
+          "label": "Вътрешен идентификатор (незадължителен)",
+          "type": "string",
+          "translatable": false
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "name": "category",
+      "label": "Категории",
+      "labelSingular": "Категория",
+      "locale": "bg",
+      "hierarchical": true,
+      "collections": [
+        "articles"
+      ],
+      "terms": [
+        {
+          "slug": "plovdiv",
+          "label": "Пловдив",
+          "locale": "bg"
+        },
+        {
+          "slug": "trafik",
+          "label": "Трафик",
+          "locale": "bg"
+        },
+        {
+          "slug": "oblast-plovdiv",
+          "label": "Област Пловдив",
+          "locale": "bg"
+        },
+        {
+          "slug": "kriminalni",
+          "label": "Криминални",
+          "locale": "bg"
+        },
+        {
+          "slug": "biznes",
+          "label": "Бизнес",
+          "locale": "bg"
+        },
+        {
+          "slug": "kultura",
+          "label": "Култура",
+          "locale": "bg"
+        },
+        {
+          "slug": "sport",
+          "label": "Спорт",
+          "locale": "bg"
+        },
+        {
+          "slug": "bulgaria",
+          "label": "България",
+          "locale": "bg"
+        },
+        {
+          "slug": "uikend",
+          "label": "Уикенд",
+          "locale": "bg"
+        }
+      ]
+    },
+    {
+      "name": "location",
+      "label": "Райони и квартали",
+      "locale": "bg",
+      "hierarchical": true,
+      "collections": [
+        "articles"
+      ],
+      "terms": [
+        {
+          "slug": "plovdiv",
+          "label": "Пловдив",
+          "locale": "bg"
+        },
+        {
+          "slug": "oblast-plovdiv",
+          "label": "Област Пловдив",
+          "locale": "bg"
+        },
+        {
+          "slug": "tsentralen",
+          "label": "Централен",
+          "locale": "bg",
+          "parent": "plovdiv"
+        },
+        {
+          "slug": "trakia",
+          "label": "Тракия",
+          "locale": "bg",
+          "parent": "plovdiv"
+        },
+        {
+          "slug": "yuzhen",
+          "label": "Южен",
+          "locale": "bg",
+          "parent": "plovdiv"
+        },
+        {
+          "slug": "severen",
+          "label": "Северен",
+          "locale": "bg",
+          "parent": "plovdiv"
+        },
+        {
+          "slug": "zapaden",
+          "label": "Западен",
+          "locale": "bg",
+          "parent": "plovdiv"
+        },
+        {
+          "slug": "iztochen",
+          "label": "Източен",
+          "locale": "bg",
+          "parent": "plovdiv"
+        },
+        {
+          "slug": "asenovgrad",
+          "label": "Асеновград",
+          "locale": "bg",
+          "parent": "oblast-plovdiv"
+        },
+        {
+          "slug": "karlovo",
+          "label": "Карлово",
+          "locale": "bg",
+          "parent": "oblast-plovdiv"
+        },
+        {
+          "slug": "hisarya",
+          "label": "Хисаря",
+          "locale": "bg",
+          "parent": "oblast-plovdiv"
+        },
+        {
+          "slug": "rakovski",
+          "label": "Раковски",
+          "locale": "bg",
+          "parent": "oblast-plovdiv"
+        }
+      ]
+    }
+  ],
+  "menus": [
+    {
+      "name": "primary",
+      "label": "Основна навигация",
+      "locale": "bg",
+      "items": [
+        {
+          "type": "custom",
+          "label": "Пловдив",
+          "url": "/plovdiv/"
+        },
+        {
+          "type": "custom",
+          "label": "Трафик",
+          "url": "/trafik/"
+        },
+        {
+          "type": "custom",
+          "label": "Област",
+          "url": "/oblast-plovdiv/"
+        },
+        {
+          "type": "custom",
+          "label": "Бизнес",
+          "url": "/biznes/"
+        },
+        {
+          "type": "custom",
+          "label": "Култура",
+          "url": "/kultura/"
+        },
+        {
+          "type": "custom",
+          "label": "Спорт",
+          "url": "/sport/"
+        },
+        {
+          "type": "custom",
+          "label": "Уикенд",
+          "url": "/uikend/"
+        },
+        {
+          "type": "custom",
+          "label": "България",
+          "url": "/bulgaria/"
+        }
+      ]
+    }
+  ],
+  "bylines": [
+    {
+      "id": "editorial",
+      "slug": "redaktsia-plovdivtoday",
+      "displayName": "Редакция PlovdivToday",
+      "locale": "bg"
+    }
+  ],
+  "content": {
+    "articles": [
+      {
+        "id": "demo-plovdiv-denyat",
+        "slug": "demo-plovdiv-denyat",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: Пловдив отблизо: как подреждаме важните теми на деня",
+          "excerpt": "Градът през погледа на бъдещата ни редакция — пример за водещ местен материал.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k3",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k0",
+                  "text": "Това е ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1",
+                  "text": "демонстрационен материал",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2",
+                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4",
+                  "text": "Какво е важно",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k7",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k6",
+                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k9",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k8",
+                  "text": "Какво следва",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kb",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "ka",
+                  "text": "Проверка на първоизточника.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kd",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kc",
+                  "text": "Разговор със засегнатите хора.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kf",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "ke",
+                  "text": "Актуализация при нова информация.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kh",
+              "style": "blockquote",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kg",
+                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "ko",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "kl",
+                  "_type": "link",
+                  "href": "/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "ki",
+                  "text": "Този пример показва ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "kj",
+                  "text": "акценти",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "kk",
+                  "text": ", уточнения и ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "km",
+                  "text": "връзка към началната страница",
+                  "marks": [
+                    "kl"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "kn",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured_image": {
+            "$media": {
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
+              "alt": "Илюстративна панорама на Пловдив",
+              "filename": "plovdiv-wide-golden.png"
+            }
+          },
+          "image_caption": "Илюстративна панорама на Пловдив.",
+          "image_credit": "Предоставен актив за демонстрацията",
+          "source_name": "Община Пловдив (примерна връзка, не източник на новина)",
+          "source_url": "https://www.plovdiv.bg/",
+          "featured": 1,
+          "breaking": 0,
+          "story_key": "demo-plovdiv-denyat"
+        },
+        "taxonomies": {
+          "category": [
+            "plovdiv"
+          ],
+          "location": [
+            "tsentralen"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-trafik-marshruti",
+        "slug": "demo-trafik-marshruti",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: По пътя през града: пример за полезна информация за движението",
+          "excerpt": "Как ще представяме маршрути, ограничения и практична информация за придвижване.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "ks",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kp",
+                  "text": "Това е ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "kq",
+                  "text": "демонстрационен материал",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "kr",
+                  "text": ", а не съобщение за промяна в движението. Няма обявени затваряния, часове или обходни маршрути.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "ku",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kt",
+                  "text": "Преди да тръгнете",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kw",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kv",
+                  "text": "В реална публикация ще уточним засегнатите улици, периода и официалния източник. Информацията за обществения транспорт ще бъде отделена от тази за автомобилите.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "ky",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kx",
+                  "text": "Практични подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k10",
+              "style": "normal",
+              "listItem": "number",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kz",
+                  "text": "Проверете датата на съобщението.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k12",
+              "style": "normal",
+              "listItem": "number",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k11",
+                  "text": "Прочетете точния обхват на ограничението.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k14",
+              "style": "normal",
+              "listItem": "number",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k13",
+                  "text": "Следете за последваща актуализация.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-trafik-marshruti"
+        },
+        "taxonomies": {
+          "category": [
+            "trafik"
+          ],
+          "location": [
+            "trakia"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-gradska-sreda",
+        "slug": "demo-gradska-sreda",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: Повече място за хората: поглед към градската среда",
+          "excerpt": "Примерен дълъг материал за улиците, зелените пространства и въпросите към институциите.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k18",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k15",
+                  "text": "Това е ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k16",
+                  "text": "демонстрационен материал",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k17",
+                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1a",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k19",
+                  "text": "Какво е важно",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1c",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1b",
+                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "marks": [
+                    "em"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "image",
+              "_key": "demo-inline-panorama",
+              "asset": {
+                "$media": {
+                  "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
+                  "filename": "plovdiv-wide-golden.png",
+                  "alt": "Предоставена илюстрация на Пловдив за преглед на оформлението"
+                }
+              },
+              "alt": "Предоставена илюстрация на Пловдив за преглед на оформлението",
+              "caption": "Демонстрационна илюстрация, предоставена от собственика на проекта.",
+              "width": 2172,
+              "height": 724,
+              "displayWidth": 720
+            },
+            {
+              "_type": "block",
+              "_key": "k1e",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1d",
+                  "text": "Какво следва",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1g",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1f",
+                  "text": "Проверка на първоизточника.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1i",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1h",
+                  "text": "Разговор със засегнатите хора.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1k",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1j",
+                  "text": "Актуализация при нова информация.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1m",
+              "style": "blockquote",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1l",
+                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1t",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k1q",
+                  "_type": "link",
+                  "href": "/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1n",
+                  "text": "Този пример показва ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1o",
+                  "text": "акценти",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1p",
+                  "text": ", уточнения и ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1r",
+                  "text": "връзка към началната страница",
+                  "marks": [
+                    "k1q"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1s",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1v",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1u",
+                  "text": "Улицата като общо пространство",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1x",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1w",
+                  "text": "Един по-дълъг репортаж има нужда от време за четене. Тук проверяваме ритъма между абзаците и подзаглавията, така че читателят да може да проследи една тема без излишно натоварване.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1z",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1y",
+                  "text": "Различните гледни точки трябва да имат свое място. В реален материал ще разграничаваме установените факти от позициите на участниците. Това е пример за оформление, а не оценка на конкретен проект.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k21",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k20",
+                  "text": "Въпросите към институциите",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k23",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k22",
+                  "text": "Какъв проблем решава предложението? Кой отговаря за изпълнението? Какъв е срокът? Къде могат да бъдат намерени документите? Подобни въпроси дават на публикацията посока и правят информацията полезна.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k25",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k24",
+                  "text": "Как ще следим темата",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k27",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k26",
+                  "text": "При последваща публикация ще посочим какво се е променило и ще свържем материалите. Датата на актуализация ще бъде видима, когато има съществена промяна.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k29",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k28",
+                  "text": "Текстът остава демонстрационен във всички свои части. Преди старта той трябва да бъде заменен с редакционно проверен материал.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured_image": {
+            "$media": {
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
+              "alt": "Илюстративна панорама на Пловдив",
+              "filename": "plovdiv-wide-golden.png"
+            }
+          },
+          "image_caption": "Илюстративна панорама на Пловдив.",
+          "image_credit": "Предоставен актив за демонстрацията",
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-gradska-sreda"
+        },
+        "taxonomies": {
+          "category": [
+            "plovdiv"
+          ],
+          "location": [
+            "yuzhen"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-kultura-programa",
+        "slug": "demo-kultura-programa",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: Културният календар: място за сцената и публиката",
+          "excerpt": "Пример за културен обзор с ясен контекст и полезни подробности.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k2d",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2a",
+                  "text": "Това е ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2b",
+                  "text": "демонстрационен материал",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2c",
+                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2f",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2e",
+                  "text": "Какво е важно",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2h",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2g",
+                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2j",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2i",
+                  "text": "Какво следва",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2l",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2k",
+                  "text": "Проверка на първоизточника.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2n",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2m",
+                  "text": "Разговор със засегнатите хора.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2p",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2o",
+                  "text": "Актуализация при нова информация.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2r",
+              "style": "blockquote",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2q",
+                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2y",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k2v",
+                  "_type": "link",
+                  "href": "/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2s",
+                  "text": "Този пример показва ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2t",
+                  "text": "акценти",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2u",
+                  "text": ", уточнения и ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2w",
+                  "text": "връзка към началната страница",
+                  "marks": [
+                    "k2v"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2x",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured_image": {
+            "$media": {
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
+              "alt": "Илюстративна панорама на Пловдив",
+              "filename": "plovdiv-wide-golden.png"
+            }
+          },
+          "image_caption": "Илюстративна панорама на Пловдив.",
+          "image_credit": "Предоставен актив за демонстрацията",
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-kultura-programa"
+        },
+        "taxonomies": {
+          "category": [
+            "kultura"
+          ],
+          "location": [
+            "tsentralen"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-biznes-magazini",
+        "slug": "demo-biznes-magazini",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: Малкият бизнес и ежедневното пазаруване",
+          "excerpt": "Демонстрационна история за местната икономика, хората и услугите.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k32",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2z",
+                  "text": "Това е ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k30",
+                  "text": "демонстрационен материал",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k31",
+                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k34",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k33",
+                  "text": "Какво е важно",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k36",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k35",
+                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k38",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k37",
+                  "text": "Какво следва",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3a",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k39",
+                  "text": "Проверка на първоизточника.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3c",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3b",
+                  "text": "Разговор със засегнатите хора.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3e",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3d",
+                  "text": "Актуализация при нова информация.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3g",
+              "style": "blockquote",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3f",
+                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3n",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k3k",
+                  "_type": "link",
+                  "href": "/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3h",
+                  "text": "Този пример показва ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3i",
+                  "text": "акценти",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3j",
+                  "text": ", уточнения и ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3l",
+                  "text": "връзка към началната страница",
+                  "marks": [
+                    "k3k"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3m",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured_image": {
+            "$media": {
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/man-shopping.jpg",
+              "alt": "Предоставена примерна снимка",
+              "filename": "man-shopping.jpg"
+            }
+          },
+          "image_caption": "Примерна снимка за преглед на оформлението.",
+          "image_credit": "Предоставен актив за демонстрацията",
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-biznes-magazini"
+        },
+        "taxonomies": {
+          "category": [
+            "biznes"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-sport-grad",
+        "slug": "demo-sport-grad",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: Спортът в града: отвъд резултата",
+          "excerpt": "Примерен спортен материал за тренировките, общността и достъпа до спорт.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k3r",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3o",
+                  "text": "Това е ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3p",
+                  "text": "демонстрационен материал",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3q",
+                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3t",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3s",
+                  "text": "Какво е важно",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3v",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3u",
+                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3x",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3w",
+                  "text": "Какво следва",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3z",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3y",
+                  "text": "Проверка на първоизточника.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k41",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k40",
+                  "text": "Разговор със засегнатите хора.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k43",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k42",
+                  "text": "Актуализация при нова информация.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k45",
+              "style": "blockquote",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k44",
+                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4c",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k49",
+                  "_type": "link",
+                  "href": "/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k46",
+                  "text": "Този пример показва ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k47",
+                  "text": "акценти",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k48",
+                  "text": ", уточнения и ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4a",
+                  "text": "връзка към началната страница",
+                  "marks": [
+                    "k49"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4b",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-sport-grad"
+        },
+        "taxonomies": {
+          "category": [
+            "sport"
+          ],
+          "location": [
+            "zapaden"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-oblast-asenovgrad",
+        "slug": "demo-oblast-asenovgrad",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: Областта отблизо: място за историите от Асеновград",
+          "excerpt": "Демонстрация на регионална история с ясно обозначено местоположение.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k4g",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4d",
+                  "text": "Това е ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4e",
+                  "text": "демонстрационен материал",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4f",
+                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4i",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4h",
+                  "text": "Какво е важно",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4k",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4j",
+                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4m",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4l",
+                  "text": "Какво следва",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4o",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4n",
+                  "text": "Проверка на първоизточника.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4q",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4p",
+                  "text": "Разговор със засегнатите хора.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4s",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4r",
+                  "text": "Актуализация при нова информация.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4u",
+              "style": "blockquote",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4t",
+                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k51",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k4y",
+                  "_type": "link",
+                  "href": "/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4v",
+                  "text": "Този пример показва ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4w",
+                  "text": "акценти",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4x",
+                  "text": ", уточнения и ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4z",
+                  "text": "връзка към началната страница",
+                  "marks": [
+                    "k4y"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k50",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured_image": {
+            "$media": {
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
+              "alt": "Илюстративна панорама на Пловдив",
+              "filename": "plovdiv-wide-golden.png"
+            }
+          },
+          "image_caption": "Илюстративна панорама на Пловдив.",
+          "image_credit": "Предоставен актив за демонстрацията",
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-oblast-asenovgrad"
+        },
+        "taxonomies": {
+          "category": [
+            "oblast-plovdiv"
+          ],
+          "location": [
+            "asenovgrad"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-uikend-plovdiv",
+        "slug": "demo-uikend-plovdiv",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: Уикенд в Пловдив: време за разходка, култура и семейство",
+          "excerpt": "Примерен седмичен гид. Предложенията показват структурата, а не програма с потвърдени събития.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k55",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k52",
+                  "text": "Това е ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k53",
+                  "text": "демонстрационен гид",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k54",
+                  "text": ", не реална програма. Няма потвърдени събития, часове, места или цени.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k57",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k56",
+                  "text": "Топ предложения",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k59",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k58",
+                  "text": "Пример за подбор: градска разходка, посещение на изложба и време с близките. Преди публикация редакцията ще провери всяко предложение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5b",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5a",
+                  "text": "Петък",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5d",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5c",
+                  "text": "Място за вечерна културна програма. Тук ще има конкретни часове и официална връзка, когато са потвърдени.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5f",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5e",
+                  "text": "Събота",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5h",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5g",
+                  "text": "Място за дневен маршрут и идея за по-дълга разходка.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5j",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5i",
+                  "text": "Неделя",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5l",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5k",
+                  "text": "Място за спокойни предложения преди началото на новата седмица.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5n",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5m",
+                  "text": "С деца",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5p",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5o",
+                  "text": "Тук ще посочим възрастовите ограничения, достъпността и необходимостта от предварително записване.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5r",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5q",
+                  "text": "Безплатни събития",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5t",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5s",
+                  "text": "Този раздел ще съдържа само предложения с проверени условия за свободен вход.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured_image": {
+            "$media": {
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
+              "alt": "Илюстративна панорама на Пловдив",
+              "filename": "plovdiv-wide-golden.png"
+            }
+          },
+          "image_caption": "Илюстративна панорама на Пловдив.",
+          "image_credit": "Предоставен актив за демонстрацията",
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-uikend-plovdiv"
+        },
+        "taxonomies": {
+          "category": [
+            "uikend"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-bulgaria-kontekst",
+        "slug": "demo-bulgaria-kontekst",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: България и светът: как ще обясняваме контекста",
+          "excerpt": "Пример за национален обзор с илюстративна снимка от предоставените тестови изображения.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k5x",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5u",
+                  "text": "Това е ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5v",
+                  "text": "демонстрационен материал",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5w",
+                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5z",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5y",
+                  "text": "Какво е важно",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k61",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k60",
+                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k63",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k62",
+                  "text": "Какво следва",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k65",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k64",
+                  "text": "Проверка на първоизточника.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k67",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k66",
+                  "text": "Разговор със засегнатите хора.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k69",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k68",
+                  "text": "Актуализация при нова информация.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k6b",
+              "style": "blockquote",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k6a",
+                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k6i",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k6f",
+                  "_type": "link",
+                  "href": "/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k6c",
+                  "text": "Този пример показва ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k6d",
+                  "text": "акценти",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k6e",
+                  "text": ", уточнения и ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k6g",
+                  "text": "връзка към началната страница",
+                  "marks": [
+                    "k6f"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k6h",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured_image": {
+            "$media": {
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/trump-test.jpg",
+              "alt": "Предоставена примерна снимка",
+              "filename": "trump-test.jpg"
+            }
+          },
+          "image_caption": "Тестова снимка; не е свързана с новинарско твърдение.",
+          "image_credit": "Предоставен актив за демонстрацията",
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-bulgaria-kontekst"
+        },
+        "taxonomies": {
+          "category": [
+            "bulgaria"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-kratka-novina",
+        "slug": "demo-kratka-novina",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "ДЕМО: Кратко съобщение: пример за бързо обновяване",
+          "excerpt": "Тест на краткия новинарски формат. Това не е съобщение за реално събитие.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k6l",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k6j",
+                  "text": "Демонстрационно съобщение.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k6k",
+                  "text": " Няма реално извънредно събитие. Този кратък текст показва как ще изглежда бърза публикация с последваща актуализация.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 1,
+          "story_key": "demo-kratka-novina"
+        },
+        "taxonomies": {
+          "category": [
+            "plovdiv"
+          ],
+          "location": [
+            "severen"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      }
+    ]
+  },
+  "defaultLocale": "bg"
 }

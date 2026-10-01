@@ -1,0 +1,16 @@
+---
+import { decodeSlug, getTaxonomyTermsWithCacheHint, getEmDashCollection, type TaxonomyTerm } from "emdash";
+import Newsroom from "../../layouts/Newsroom.astro";
+import Archive from "../../components/Archive.astro";
+const slug = decodeSlug(Astro.params.slug);
+if (!slug) return Astro.rewrite("/404");
+const terms = await getTaxonomyTermsWithCacheHint("location", { locale: "bg", includeCounts: false });
+function flatten(items: TaxonomyTerm[]): TaxonomyTerm[] {
+	return items.flatMap(item => [item, ...flatten(item.children)]);
+}
+const term = flatten(terms.data).find(item => item.slug === slug);
+if (!term) return Astro.rewrite("/404");
+const result = await getEmDashCollection("articles", { locale: "bg", status: "published", where: { location: flatten([term]).map(item => item.slug) }, limit: 13, orderBy: { published_at: "desc" }, cursor: Astro.url.searchParams.get("cursor") || undefined });
+if (Astro.cache?.enabled) { Astro.cache.set(result.cacheHint); Astro.cache.set(terms.cacheHint); }
+---
+<Newsroom title={term.label} description={`Материали от ${term.label}.`}><Archive title={term.label} description={`Новини и истории от ${term.label}.`} articles={result.entries} nextCursor={result.nextCursor} /></Newsroom>

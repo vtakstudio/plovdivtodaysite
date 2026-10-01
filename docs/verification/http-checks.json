@@ -1,0 +1,358 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/search",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/search?q=Пловдив",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/search?q=невъзможенрезултат999",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/novini/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/plovdiv/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/trafik/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/oblast-plovdiv/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/biznes/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/kultura/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/sport/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/bulgaria/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/uikend/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/kriminalni/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/plovdiv/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/tsentralen/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/trakia/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/yuzhen/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/severen/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/zapaden/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/iztochen/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/oblast-plovdiv/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/asenovgrad/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/karlovo/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/hisarya/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/rakovski/",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/novini/demo-plovdiv-denyat",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/novini/demo-trafik-marshruti",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/novini/demo-gradska-sreda",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/novini/demo-kultura-programa",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/novini/demo-biznes-magazini",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/novini/demo-sport-grad",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/novini/demo-oblast-asenovgrad",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/novini/demo-uikend-plovdiv",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/novini/demo-bulgaria-kontekst",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/novini/demo-kratka-novina",
+    "status": 200,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false,
+    "newsArticle": 1
+  },
+  {
+    "path": "/not-a-page",
+    "status": 404,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/novini/missing",
+    "status": 404,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/rayoni/missing",
+    "status": 404,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/novini/demo-proverka-redaktor",
+    "status": 404,
+    "h1": 1,
+    "bg": true,
+    "noindex": true,
+    "invalidText": false
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "snippet": "User-agent: *\nDisallow: /\n\nSitemap: https://plovdivtodaysite.estudio-5ba.workers.dev/sitemap.xml\n"
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200
+  },
+  {
+    "path": "/sitemap-articles.xml",
+    "status": 200
+  },
+  {
+    "path": "/rss.xml",
+    "status": 200,
+    "snippet": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss version=\"2.0\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n  <channel>\n    <title>PlovdivToday</title>\n    <description>Пловдив, днес. Новините от града и региона.</description>\n\t<link>https://plovdi"
+  }
+]

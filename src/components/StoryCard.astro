@@ -1,0 +1,22 @@
+---
+import { Image } from "emdash/ui";
+import { formatDate, type Article } from "../utils/newsroom";
+interface Props { article: Article; variant?: "lead" | "standard" | "compact" | "weekend"; headingLevel?: "h2" | "h3"; }
+const { article, variant = "standard", headingLevel } = Astro.props;
+const Heading = headingLevel || (variant === "lead" ? "h2" : "h3");
+const category = article.data.terms?.category?.[0];
+const imageSizes = variant === "lead"
+	? "(min-width: 1290px) 800px, (min-width: 761px) 64vw, calc(100vw - 32px)"
+	: variant === "weekend"
+		? "(min-width: 1290px) 600px, (min-width: 761px) 45vw, calc(100vw - 32px)"
+		: "(min-width: 1290px) 392px, (min-width: 761px) 30vw, (min-width: 481px) 45vw, calc(100vw - 32px)";
+---
+<article class:list={["story", `story-${variant}`]}>
+	{variant !== "compact" && article.data.featured_image && <a href={`/novini/${article.id}`} class="story-image" tabindex="-1" aria-hidden="true"><Image image={article.data.featured_image} priority={variant === "lead"} sizes={imageSizes} /></a>}
+	<div class="story-copy">
+		<div class="eyebrow">{category?.label || "Новини"}</div>
+		<Heading class="story-title" {...article.edit.title}><a href={`/novini/${article.id}`}>{article.data.title}</a></Heading>
+		{variant !== "compact" && article.data.excerpt && <p {...article.edit.excerpt}>{article.data.excerpt}</p>}
+		{article.data.publishedAt && <time class="story-date" datetime={article.data.publishedAt.toISOString()}>{formatDate(article.data.publishedAt)}</time>}
+	</div>
+</article>

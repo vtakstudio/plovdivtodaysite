@@ -1,33 +1,5 @@
 ---
-import Base from "../layouts/Base.astro";
+import Newsroom from "../layouts/Newsroom.astro";
+Astro.response.status = 404;
 ---
-
-<Base title="Page not found">
-	<div class="not-found">
-		<h1>404</h1>
-		<p>The page you're looking for doesn't exist.</p>
-		<a href="/">Go back home</a>
-	</div>
-</Base>
-
-<style>
-	.not-found {
-		text-align: center;
-		padding: var(--spacing-24) var(--spacing-6);
-	}
-
-	.not-found h1 {
-		font-size: var(--font-size-5xl);
-		margin-bottom: var(--spacing-2);
-		color: var(--color-border);
-	}
-
-	.not-found p {
-		color: var(--color-muted);
-		margin-bottom: var(--spacing-6);
-	}
-
-	.not-found a {
-		color: var(--color-text);
-	}
-</style>
+<Newsroom title="Страницата не е намерена" robots="noindex, follow"><section class="archive wrap"><div class="eyebrow">404</div><h1>Тази страница не е тук.</h1><p class="archive-description">Адресът може да е променен или материалът вече да не е достъпен.</p><nav class="pagination" aria-label="Полезни връзки"><a href="/">Начало</a><a href="/plovdiv/">Пловдив</a><a href="/novini/">Последни новини</a></nav></section></Newsroom>

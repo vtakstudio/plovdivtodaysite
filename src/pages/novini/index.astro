@@ -1,0 +1,8 @@
+---
+import { getEmDashCollection } from "emdash";
+import Newsroom from "../../layouts/Newsroom.astro";
+import Archive from "../../components/Archive.astro";
+const result = await getEmDashCollection("articles", { locale: "bg", status: "published", limit: 13, orderBy: { published_at: "desc" }, cursor: Astro.url.searchParams.get("cursor") || undefined });
+if (Astro.cache?.enabled) Astro.cache.set(result.cacheHint);
+---
+<Newsroom title="Последни новини" description="Всички последни материали от Пловдив, областта и България."><Archive title="Последни новини" articles={result.entries} nextCursor={result.nextCursor} /></Newsroom>

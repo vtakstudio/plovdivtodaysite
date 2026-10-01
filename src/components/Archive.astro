@@ -1,0 +1,17 @@
+---
+import StoryCard from "./StoryCard.astro";
+import type { Article } from "../utils/newsroom";
+interface Props { title: string; articles: Article[]; description?: string; nextCursor?: string | null; weekend?: boolean; }
+const { title, articles, description, nextCursor, weekend = false } = Astro.props;
+const next = new URL(Astro.url.pathname, Astro.url);
+if (nextCursor) next.searchParams.set("cursor", nextCursor);
+---
+<section class="archive wrap">
+	<div class="eyebrow">{weekend ? "Планове за свободното време" : "PlovdivToday"}</div>
+	<h1>{title}</h1>{description && <p class="archive-description">{description}</p>}
+	{articles.length ? <>
+		<StoryCard article={articles[0]} variant={weekend ? "weekend" : "lead"} headingLevel="h2" />
+		{articles.length > 1 && <><div class="section-heading"><h2>{weekend ? "Предишни гидове" : "Още от раздела"}</h2></div><div class="story-grid">{articles.slice(1).map(article => <StoryCard article={article} />)}</div></>}
+	</> : <p class="empty">Все още няма публикувани материали тук. <a href="/novini/">Вижте последните новини.</a></p>}
+	{nextCursor && <nav class="pagination" aria-label="Страници"><a href={`${next.pathname}${next.search}`}>По-стари материали →</a><a href={Astro.url.pathname}>Към най-новите</a></nav>}
+</section>
