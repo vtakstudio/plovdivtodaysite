@@ -1,6 +1,6 @@
 ---
 import { getMenuWithCacheHint, getSiteSettingsWithCacheHint } from "emdash";
-import { EmDashHead, EmDashBodyStart, EmDashBodyEnd, Image } from "emdash/ui";
+import { EmDashHead, EmDashBodyStart, EmDashBodyEnd } from "emdash/ui";
 import { createPublicPageContext } from "emdash/page";
 import { Font } from "astro:assets";
 import "../styles/tokens.css";
@@ -44,36 +44,49 @@ const page = createPublicPageContext({
 });
 if (prelaunch) Astro.response.headers.set("X-Robots-Tag", "noindex, nofollow");
 const menu = menuResult.data?.items || [];
+const headerMenu = [...menu, { url: "/rayoni/", label: "Райони и квартали" }];
+const prioritySections = ["/plovdiv/", "/biznes/", "/kultura/"];
+const sectionPriority = (url: string) => {
+	const index = prioritySections.indexOf(url);
+	return index === -1 ? prioritySections.length : index;
+};
+headerMenu.sort((a, b) => sectionPriority(a.url) - sectionPriority(b.url));
 ---
 <!doctype html>
 <html lang="bg">
 	<head>
 		<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 		<Font cssVariable="--font-body" preload />
+		<Font cssVariable="--font-heading" preload />
 		<title>{fullTitle}</title><EmDashHead page={page} />
 	</head>
 	<body class="newsroom">
 		<EmDashBodyStart page={page} />
 		<a class="skip-link" href="#main">Към съдържанието</a>
-		{prelaunch && <div class="prelaunch">Демонстрационна версия · Материалите не са реални новини</div>}
 		<header class="masthead">
 			<div class="masthead-top wrap">
+				<div class="weather-placeholder" aria-label="Времето в Пловдив — температурата предстои">
+					<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg>
+					<span aria-hidden="true">—°</span>
+				</div>
 				<a class="brand" href="/" aria-label={`${siteTitle} — начало`}>
-					{settings.logo?.url ? <Image class="desktop-logo" image={{ id: settings.logo.mediaId, src: settings.logo.url, alt: settings.logo.alt || siteTitle }} width={320} height={110} sizes="320px" priority /> : <span class="desktop-brand-name">{siteTitle}</span>}
-					{settings.favicon?.url && <Image class="mobile-logo" image={{ id: settings.favicon.mediaId, src: settings.favicon.url, alt: "" }} width={48} height={48} sizes="48px" priority />}
-					<span class="mobile-brand-name">{siteTitle}</span>
+					<img class="brand-skyline" src="/brand/transparent-logo-v2.png" alt={siteTitle} width="2176" height="708" fetchpriority="high" />
 				</a>
-				<p class="masthead-tagline">{settings.tagline}</p>
-				<a class="latest-link" href="/novini/">Последни новини ↗</a>
+				<a href="/search" class="masthead-search" aria-label="Търсене в PlovdivToday">
+					<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></svg>
+				</a>
 			</div>
+			<div class="category-band">
 			<nav class="desktop-nav wrap" aria-label="Основна навигация">
-				{menu.map(item => <a href={item.url} aria-current={Astro.url.pathname === item.url ? "page" : undefined}>{item.label}</a>)}
-				<a href="/rayoni/">Райони и квартали</a>
+				{headerMenu.map((item, index) => <a data-nav-section hidden={index >= 3} href={item.url} aria-current={Astro.url.pathname === item.url ? "page" : undefined}>{item.label}</a>)}
+				<details class="nav-more">
+					<summary>Още <svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m2 4 4 4 4-4" /></svg></summary>
+					<div class="nav-more-list">
+						{headerMenu.map((item, index) => <a hidden={index < 3} href={item.url} aria-current={Astro.url.pathname === item.url ? "page" : undefined}>{item.label}</a>)}
+					</div>
+				</details>
 			</nav>
-			<details class="mobile-nav wrap">
-				<summary>Раздели <span aria-hidden="true">☰</span></summary>
-				<nav aria-label="Мобилна навигация">{menu.map(item => <a href={item.url}>{item.label}</a>)}<a href="/rayoni/">Райони и квартали</a><a href="/novini/">Последни новини</a></nav>
-			</details>
+			</div>
 		</header>
 		<main id="main" tabindex="-1"><slot /></main>
 		<footer class="news-footer">
@@ -86,3 +99,37 @@ const menu = menuResult.data?.items || [];
 		<EmDashBodyEnd page={page} />
 	</body>
 </html>
+
+<script>
+	const nav = document.querySelector<HTMLElement>(".desktop-nav");
+	const more = nav?.querySelector<HTMLDetailsElement>(".nav-more");
+	if (nav && more) {
+		const links = [...nav.querySelectorAll<HTMLAnchorElement>("[data-nav-section]")];
+		const overflowLinks = [...more.querySelectorAll<HTMLAnchorElement>(".nav-more-list a")];
+		// Measure the actual labels after font loading and whenever the available width changes.
+		const fitCategories = () => {
+			links.forEach(link => { link.hidden = false; });
+			more.hidden = false;
+			const widths = links.map(link => link.getBoundingClientRect().width);
+			const gap = parseFloat(getComputedStyle(nav).columnGap);
+			const fullWidth = widths.reduce((total, width) => total + width, 0) + gap * (links.length - 1);
+			let count = links.length;
+			if (fullWidth > nav.clientWidth) {
+				count = 0;
+				let used = more.getBoundingClientRect().width;
+				for (const width of widths) {
+					if (used + gap + width > nav.clientWidth) break;
+					used += gap + width;
+					count++;
+				}
+			}
+			links.forEach((link, index) => { link.hidden = index >= count; });
+			overflowLinks.forEach((link, index) => { link.hidden = index < count; });
+			more.hidden = count === links.length;
+			if (more.hidden) more.open = false;
+		};
+		fitCategories();
+		new ResizeObserver(fitCategories).observe(nav);
+		void document.fonts.ready.then(fitCategories);
+	}
+</script>

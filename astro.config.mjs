@@ -26,9 +26,18 @@ export default defineConfig({
 	fonts: [
 		{
 			provider: fontProviders.google(),
-			name: "Inter",
+			name: "Sofia Sans",
 			cssVariable: "--font-body",
-			weights: [400, 500, 600, 700],
+			weights: [400, 500, 600, 700, 800],
+			styles: ["normal", "italic"],
+			subsets: ["latin", "cyrillic", "cyrillic-ext"],
+			fallbacks: ["sans-serif"],
+		},
+		{
+			provider: fontProviders.google(),
+			name: "Alumni Sans SC",
+			cssVariable: "--font-heading",
+			weights: [700, 800],
 			subsets: ["latin", "cyrillic", "cyrillic-ext"],
 			fallbacks: ["sans-serif"],
 		},

@@ -13,24 +13,26 @@ if (Astro.cache?.enabled) for (const result of [latest, featured, ...blocks]) As
 const lead = featured.entries[0] || latest.entries[0];
 const secondary = latest.entries.filter(entry => entry.id !== lead?.id).slice(0, 4);
 const blockBySlug = new Map(displayedSections.map(([slug], index) => [slug, blocks[index].entries]));
-const sectionOrder = ["plovdiv", "trafik", "uikend", "oblast-plovdiv", "biznes", "kultura", "sport", "bulgaria"] as const;
+const sectionOrder = ["plovdiv", "trafik", "uikend", "kultura", "oblast-plovdiv", "biznes", "sport", "bulgaria"] as const;
 ---
 <Newsroom title="Пловдив днес" description="Новините от Пловдив и областта: градът, трафикът, културата, бизнесът и уикендът.">
-  <div class="wrap">
-    <div class="page-intro"><h1>Пловдив, днес.</h1><p>Градът. Хората. Важното.</p></div>
+  <div class="wrap front-page">
     {lead ? <div class="top-stories"><StoryCard article={lead} variant="lead" /><div class="secondary-stories">{secondary.map(article => <StoryCard article={article} variant="compact" />)}</div></div> : <p class="empty">Все още няма публикувани материали.</p>}
-    <section class="news-section" aria-labelledby="latest-heading">
-      <div class="section-heading"><h2 id="latest-heading">Последни новини</h2><a href="/novini/">Всички новини ↗</a></div>
+    <section class="news-section latest-section" aria-labelledby="latest-heading">
+      <div class="section-heading"><h2 id="latest-heading"><span class="live-dot" aria-hidden="true"></span>Последни новини</h2><a href="/novini/">Всички новини →</a></div>
       <ol class="latest-feed">{latest.entries.slice(0, 8).map(article => <li><time datetime={article.data.publishedAt?.toISOString()}>{formatDate(article.data.publishedAt, true)}</time><a href={`/novini/${article.id}`}>{article.data.title}</a></li>)}</ol>
     </section>
-    {sectionOrder.map(slug => {
+    <div class="home-sections">
+    {sectionOrder.map((slug, index) => {
       const articles = blockBySlug.get(slug) || [];
       const label = displayedSections.find(([key]) => key === slug)?.[1];
-      return <section class:list={["news-section", { "weekend-section": slug === "uikend" }]} aria-labelledby={`section-${slug}`}>
-        {slug === "uikend" && <p class="weekend-label">Планове за свободното време</p>}
-        <div class="section-heading"><h2 id={`section-${slug}`}>{slug === "uikend" ? "Уикенд в Пловдив" : label}</h2><a href={`/${slug}/`}>Към раздела ↗</a></div>
-        {articles.length ? slug === "uikend" ? <><StoryCard article={articles[0]} variant="weekend" />{articles.length > 1 && <div class="story-grid">{articles.slice(1).map(article => <StoryCard article={article} variant="compact" />)}</div>}</> : <div class="story-grid">{articles.map(article => <StoryCard article={article} />)}</div> : <p class="empty">Очаквайте първите материали в този раздел.</p>}
+      const magazine = slug === "uikend" || slug === "kultura";
+      return <section class:list={["news-section", `home-section-${slug}`, { "weekend-section": slug === "uikend", "magazine-section": magazine }]} aria-labelledby={`section-${slug}`}>
+        {slug === "uikend" && <p class="weekend-label">По-бавно. По-близо. Навън.</p>}
+        <div class="section-heading"><h2 id={`section-${slug}`}><a href={`/${slug}/`}><span class="section-number" aria-hidden="true">{String(index + 1).padStart(2, "0")} /</span>{slug === "uikend" ? "Уикенд в Пловдив" : label}</a></h2><a href={`/${slug}/`}>Виж всички →</a></div>
+        {articles.length ? magazine ? <><StoryCard article={articles[0]} variant="weekend" />{articles.length > 1 && <div class="story-grid">{articles.slice(1).map(article => <StoryCard article={article} variant="compact" />)}</div>}</> : <div class="story-grid">{articles.map((article, articleIndex) => <StoryCard article={article} variant={slug === "biznes" || (slug === "plovdiv" && articleIndex === 1) ? "standard" : "compact"} />)}</div> : <p class="empty">Очаквайте първите материали в този раздел.</p>}
       </section>;
     })}
+    </div>
   </div>
 </Newsroom>
