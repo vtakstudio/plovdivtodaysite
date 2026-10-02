@@ -303,98 +303,90 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: Пловдив отблизо: как подреждаме важните теми на деня",
-          "excerpt": "Градът през погледа на бъдещата ни редакция — пример за водещ местен материал.",
+          "title": "Затварят част от бул. „Васил Априлов“ за три дни: променят движението на автобусите",
+          "excerpt": "Временни маршрути, засегнати спирки и достъп до района — най-важното за пътуващите през града.",
           "content": [
             {
               "_type": "block",
-              "_key": "k3",
+              "_key": "k2",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
                   "_key": "k0",
-                  "text": "Това е ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1",
-                  "text": "демонстрационен материал",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "k2",
-                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "_key": "k1",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k5",
+              "_key": "k4",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3",
+                  "text": "В този пример временната организация обхваща участък от булеварда и засяга както автомобилите, така и обществения транспорт. Целта на материала е читателят да намери най-важното още в първите абзаци.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k6",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k4",
-                  "text": "Какво е важно",
+                  "_key": "k5",
+                  "text": "Какво се променя",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k7",
+              "_key": "k8",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k6",
-                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "_key": "k7",
+                  "text": "В примерния сценарий ремонтът продължава три дни. Достъпът до съседните улици остава възможен, но преминаването през работния участък е ограничено. Точните граници и часовете трябва да бъдат проверени в официално съобщение преди публикуване на реална новина.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k9",
-              "style": "h2",
+              "_key": "ka",
+              "style": "h3",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k8",
-                  "text": "Какво следва",
+                  "_key": "k9",
+                  "text": "За шофьорите",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "kb",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "ka",
-                  "text": "Проверка на първоизточника.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "kd",
+              "_key": "kc",
               "style": "normal",
               "listItem": "bullet",
               "level": 1,
@@ -402,15 +394,15 @@
               "children": [
                 {
                   "_type": "span",
-                  "_key": "kc",
-                  "text": "Разговор със засегнатите хора.",
+                  "_key": "kb",
+                  "text": "Предвидете повече време за преминаване през района.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "kf",
+              "_key": "ke",
               "style": "normal",
               "listItem": "bullet",
               "level": 1,
@@ -418,22 +410,66 @@
               "children": [
                 {
                   "_type": "span",
-                  "_key": "ke",
-                  "text": "Актуализация при нова информация.",
+                  "_key": "kd",
+                  "text": "Следвайте временните знаци, а не обичайния маршрут.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "kh",
-              "style": "blockquote",
+              "_key": "kg",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "kg",
-                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
+                  "_key": "kf",
+                  "text": "Оставете свободен достъпа до жилищните сгради.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "ki",
+              "style": "h3",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kh",
+                  "text": "За пътниците в автобусите",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "km",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kj",
+                  "text": "В бъдещ реален материал тук ще бъдат посочени ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "kk",
+                  "text": "номерата на засегнатите линии",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "kl",
+                  "text": ", временните спирки и периодът на отклонението. В този пример няма потвърдени промени в автобусни маршрути.",
                   "marks": []
                 }
               ]
@@ -441,47 +477,151 @@
             {
               "_type": "block",
               "_key": "ko",
+              "style": "blockquote",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kn",
+                  "text": "„Читателят трябва да разбере какво се променя за него, преди да прочете подробностите.“ — примерна редакционна бележка, не цитат от институция.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kq",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kp",
+                  "text": "Преди да тръгнете",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "ks",
+              "style": "normal",
+              "listItem": "number",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kr",
+                  "text": "Проверете датата и часа на последната актуализация.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "ku",
+              "style": "normal",
+              "listItem": "number",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kt",
+                  "text": "Сравнете информацията с оригиналното съобщение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kw",
+              "style": "normal",
+              "listItem": "number",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kv",
+                  "text": "Проверете дали ограничението важи за вашия маршрут.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k11",
               "style": "normal",
               "markDefs": [
                 {
-                  "_key": "kl",
+                  "_key": "ky",
                   "_type": "link",
-                  "href": "/"
+                  "href": "https://www.plovdiv.bg/"
                 }
               ],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "ki",
-                  "text": "Този пример показва ",
+                  "_key": "kx",
+                  "text": "Актуални официални съобщения могат да бъдат потърсени в ",
                   "marks": []
                 },
                 {
                   "_type": "span",
-                  "_key": "kj",
-                  "text": "акценти",
+                  "_key": "kz",
+                  "text": "сайта на Община Пловдив",
                   "marks": [
-                    "strong"
+                    "ky"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "kk",
-                  "text": ", уточнения и ",
+                  "_key": "k10",
+                  "text": ". Връзката е пример за първоизточник и не потвърждава измисления сценарий в тази публикация.",
                   "marks": []
-                },
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
                 {
                   "_type": "span",
-                  "_key": "km",
-                  "text": "връзка към началната страница",
-                  "marks": [
-                    "kl"
-                  ]
-                },
+                  "_key": "k12",
+                  "text": "Как ще следим темата",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
                 {
                   "_type": "span",
-                  "_key": "kn",
-                  "text": ".",
+                  "_key": "k14",
+                  "text": "При нова информация редакцията ще допълва същия материал и ще посочва часа на съществената актуализация. Така читателят ще може да проследи промяната, без да сравнява няколко почти еднакви новини.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k16",
+                  "text": "Този текст показва ритъма на по-дълга статия: кратки абзаци, ясни подзаглавия, списъци и полезни връзки. Всички описани действия остават част от демонстрацията.",
                   "marks": []
                 }
               ]
@@ -489,15 +629,14 @@
           ],
           "featured_image": {
             "$media": {
-              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
-              "alt": "Илюстративна панорама на Пловдив",
-              "filename": "plovdiv-wide-golden.png"
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/demo/pedestrian.jpg",
+              "filename": "pedestrian.jpg",
+              "alt": "Архивна илюстративна снимка на Пловдив; не показва описаното демо събитие"
             }
           },
-          "image_caption": "Илюстративна панорама на Пловдив.",
-          "image_credit": "Предоставен актив за демонстрацията",
-          "source_name": "Община Пловдив (примерна връзка, не източник на новина)",
-          "source_url": "https://www.plovdiv.bg/",
+          "image_caption": "Архивен кадър на Пловдив. Илюстрация към примерен материал.",
+          "image_credit": "Realsteel007 / Wikimedia Commons · CC BY-SA 4.0",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение",
           "featured": 1,
           "breaking": 0,
           "story_key": "demo-plovdiv-denyat"
@@ -522,123 +661,83 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: По пътя през града: пример за полезна информация за движението",
-          "excerpt": "Как ще представяме маршрути, ограничения и практична информация за придвижване.",
+          "title": "Нова организация на движението около Централна гара влиза в сила от понеделник",
+          "excerpt": "Как ще се преминава през района и къде да проверите временните маршрути.",
           "content": [
             {
               "_type": "block",
-              "_key": "ks",
+              "_key": "k1a",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "kp",
-                  "text": "Това е ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "kq",
-                  "text": "демонстрационен материал",
+                  "_key": "k18",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "kr",
-                  "text": ", а не съобщение за промяна в движението. Няма обявени затваряния, часове или обходни маршрути.",
+                  "_key": "k19",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "ku",
+              "_key": "k1c",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "kt",
-                  "text": "Преди да тръгнете",
+                  "_key": "k1b",
+                  "text": "Какво е важно",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "kw",
+              "_key": "k1e",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "kv",
-                  "text": "В реална публикация ще уточним засегнатите улици, периода и официалния източник. Информацията за обществения транспорт ще бъде отделена от тази за автомобилите.",
+                  "_key": "k1d",
+                  "text": "Как ще се преминава през района и къде да проверите временните маршрути. Тук показваме примерната структура на местна публикация с контекст и практични подробности.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "ky",
+              "_key": "k1g",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "kx",
-                  "text": "Практични подробности",
+                  "_key": "k1f",
+                  "text": "Какво следва",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k10",
+              "_key": "k1i",
               "style": "normal",
-              "listItem": "number",
-              "level": 1,
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "kz",
-                  "text": "Проверете датата на съобщението.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k12",
-              "style": "normal",
-              "listItem": "number",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k11",
-                  "text": "Прочетете точния обхват на ограничението.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k14",
-              "style": "normal",
-              "listItem": "number",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k13",
-                  "text": "Следете за последваща актуализация.",
+                  "_key": "k1h",
+                  "text": "Преди реално публикуване редакцията ще провери фактите, датите и първоизточника. Описаното тук не е потвърдено събитие.",
                   "marks": []
                 }
               ]
@@ -646,7 +745,8 @@
           ],
           "featured": 0,
           "breaking": 0,
-          "story_key": "demo-trafik-marshruti"
+          "story_key": "demo-trafik-marshruti",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение"
         },
         "taxonomies": {
           "category": [
@@ -668,46 +768,40 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: Повече място за хората: поглед към градската среда",
-          "excerpt": "Примерен дълъг материал за улиците, зелените пространства и въпросите към институциите.",
+          "title": "Повече сянка и места за почивка: как може да изглежда Главната след обновяването",
+          "excerpt": "Пешеходната улица през погледа на хората, които живеят и работят в центъра.",
           "content": [
             {
               "_type": "block",
-              "_key": "k18",
+              "_key": "k1l",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k15",
-                  "text": "Това е ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k16",
-                  "text": "демонстрационен материал",
+                  "_key": "k1j",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "k17",
-                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "_key": "k1k",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k1a",
+              "_key": "k1n",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k19",
+                  "_key": "k1m",
                   "text": "Какво е важно",
                   "marks": []
                 }
@@ -715,108 +809,28 @@
             },
             {
               "_type": "block",
-              "_key": "k1c",
+              "_key": "k1p",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k1b",
-                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
-                  "marks": [
-                    "em"
-                  ]
+                  "_key": "k1o",
+                  "text": "Пешеходната улица през погледа на хората, които живеят и работят в центъра. Тук показваме примерната структура на местна публикация с контекст и практични подробности.",
+                  "marks": []
                 }
               ]
             },
             {
-              "_type": "image",
-              "_key": "demo-inline-panorama",
-              "asset": {
-                "$media": {
-                  "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
-                  "filename": "plovdiv-wide-golden.png",
-                  "alt": "Предоставена илюстрация на Пловдив за преглед на оформлението"
-                }
-              },
-              "alt": "Предоставена илюстрация на Пловдив за преглед на оформлението",
-              "caption": "Демонстрационна илюстрация, предоставена от собственика на проекта.",
-              "width": 2172,
-              "height": 724,
-              "displayWidth": 720
-            },
-            {
               "_type": "block",
-              "_key": "k1e",
+              "_key": "k1r",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k1d",
+                  "_key": "k1q",
                   "text": "Какво следва",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1g",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1f",
-                  "text": "Проверка на първоизточника.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1i",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1h",
-                  "text": "Разговор със засегнатите хора.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1k",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1j",
-                  "text": "Актуализация при нова информация.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1m",
-              "style": "blockquote",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1l",
-                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
                   "marks": []
                 }
               ]
@@ -825,158 +839,12 @@
               "_type": "block",
               "_key": "k1t",
               "style": "normal",
-              "markDefs": [
-                {
-                  "_key": "k1q",
-                  "_type": "link",
-                  "href": "/"
-                }
-              ],
+              "markDefs": [],
               "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1n",
-                  "text": "Този пример показва ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1o",
-                  "text": "акценти",
-                  "marks": [
-                    "strong"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1p",
-                  "text": ", уточнения и ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1r",
-                  "text": "връзка към началната страница",
-                  "marks": [
-                    "k1q"
-                  ]
-                },
                 {
                   "_type": "span",
                   "_key": "k1s",
-                  "text": ".",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1v",
-              "style": "h2",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1u",
-                  "text": "Улицата като общо пространство",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1x",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1w",
-                  "text": "Един по-дълъг репортаж има нужда от време за четене. Тук проверяваме ритъма между абзаците и подзаглавията, така че читателят да може да проследи една тема без излишно натоварване.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1z",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1y",
-                  "text": "Различните гледни точки трябва да имат свое място. В реален материал ще разграничаваме установените факти от позициите на участниците. Това е пример за оформление, а не оценка на конкретен проект.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k21",
-              "style": "h2",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k20",
-                  "text": "Въпросите към институциите",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k23",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k22",
-                  "text": "Какъв проблем решава предложението? Кой отговаря за изпълнението? Какъв е срокът? Къде могат да бъдат намерени документите? Подобни въпроси дават на публикацията посока и правят информацията полезна.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k25",
-              "style": "h2",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k24",
-                  "text": "Как ще следим темата",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k27",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k26",
-                  "text": "При последваща публикация ще посочим какво се е променило и ще свържем материалите. Датата на актуализация ще бъде видима, когато има съществена промяна.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k29",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k28",
-                  "text": "Текстът остава демонстрационен във всички свои части. Преди старта той трябва да бъде заменен с редакционно проверен материал.",
+                  "text": "Преди реално публикуване редакцията ще провери фактите, датите и първоизточника. Описаното тук не е потвърдено събитие.",
                   "marks": []
                 }
               ]
@@ -984,16 +852,17 @@
           ],
           "featured_image": {
             "$media": {
-              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
-              "alt": "Илюстративна панорама на Пловдив",
-              "filename": "plovdiv-wide-golden.png"
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/demo/street.jpg",
+              "filename": "street.jpg",
+              "alt": "Архивна илюстративна снимка на Пловдив; не показва описаното демо събитие"
             }
           },
-          "image_caption": "Илюстративна панорама на Пловдив.",
-          "image_credit": "Предоставен актив за демонстрацията",
+          "image_caption": "Архивен кадър на Пловдив. Илюстрация към примерен материал.",
+          "image_credit": "Nenko Lazarov / Wikimedia Commons · CC BY 2.5",
           "featured": 0,
           "breaking": 0,
-          "story_key": "demo-gradska-sreda"
+          "story_key": "demo-gradska-sreda",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение"
         },
         "taxonomies": {
           "category": [
@@ -1015,46 +884,40 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: Културният календар: място за сцената и публиката",
-          "excerpt": "Пример за културен обзор с ясен контекст и полезни подробности.",
+          "title": "Вечер в Стария град: музика, изложби и разговори с артистите",
+          "excerpt": "Културен маршрут за онези, които искат да останат навън след залез.",
           "content": [
             {
               "_type": "block",
-              "_key": "k2d",
+              "_key": "k1w",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k2a",
-                  "text": "Това е ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k2b",
-                  "text": "демонстрационен материал",
+                  "_key": "k1u",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "k2c",
-                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "_key": "k1v",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k2f",
+              "_key": "k1y",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k2e",
+                  "_key": "k1x",
                   "text": "Какво е важно",
                   "marks": []
                 }
@@ -1062,27 +925,27 @@
             },
             {
               "_type": "block",
-              "_key": "k2h",
+              "_key": "k20",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k2g",
-                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "_key": "k1z",
+                  "text": "Културен маршрут за онези, които искат да останат навън след залез. Тук показваме примерната структура на местна публикация с контекст и практични подробности.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k2j",
+              "_key": "k22",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k2i",
+                  "_key": "k21",
                   "text": "Какво следва",
                   "marks": []
                 }
@@ -1090,110 +953,14 @@
             },
             {
               "_type": "block",
-              "_key": "k2l",
+              "_key": "k24",
               "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k2k",
-                  "text": "Проверка на първоизточника.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k2n",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k2m",
-                  "text": "Разговор със засегнатите хора.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k2p",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k2o",
-                  "text": "Актуализация при нова информация.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k2r",
-              "style": "blockquote",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k2q",
-                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k2y",
-              "style": "normal",
-              "markDefs": [
-                {
-                  "_key": "k2v",
-                  "_type": "link",
-                  "href": "/"
-                }
-              ],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k2s",
-                  "text": "Този пример показва ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k2t",
-                  "text": "акценти",
-                  "marks": [
-                    "strong"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k2u",
-                  "text": ", уточнения и ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k2w",
-                  "text": "връзка към началната страница",
-                  "marks": [
-                    "k2v"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k2x",
-                  "text": ".",
+                  "_key": "k23",
+                  "text": "Преди реално публикуване редакцията ще провери фактите, датите и първоизточника. Описаното тук не е потвърдено събитие.",
                   "marks": []
                 }
               ]
@@ -1201,16 +968,17 @@
           ],
           "featured_image": {
             "$media": {
-              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
-              "alt": "Илюстративна панорама на Пловдив",
-              "filename": "plovdiv-wide-golden.png"
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/demo/night.jpg",
+              "filename": "night.jpg",
+              "alt": "Архивна илюстративна снимка на Пловдив; не показва описаното демо събитие"
             }
           },
-          "image_caption": "Илюстративна панорама на Пловдив.",
-          "image_credit": "Предоставен актив за демонстрацията",
+          "image_caption": "Архивен кадър на Пловдив. Илюстрация към примерен материал.",
+          "image_credit": "Kostadin Kamburov / Wikimedia Commons · CC BY-SA 4.0",
           "featured": 0,
           "breaking": 0,
-          "story_key": "demo-kultura-programa"
+          "story_key": "demo-kultura-programa",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение"
         },
         "taxonomies": {
           "category": [
@@ -1232,46 +1000,40 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: Малкият бизнес и ежедневното пазаруване",
-          "excerpt": "Демонстрационна история за местната икономика, хората и услугите.",
+          "title": "Малките магазини в центъра търсят нови начини да привличат клиенти",
+          "excerpt": "Местната търговия между кварталните навици и онлайн пазаруването.",
           "content": [
             {
               "_type": "block",
-              "_key": "k32",
+              "_key": "k27",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k2z",
-                  "text": "Това е ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k30",
-                  "text": "демонстрационен материал",
+                  "_key": "k25",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "k31",
-                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "_key": "k26",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k34",
+              "_key": "k29",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k33",
+                  "_key": "k28",
                   "text": "Какво е важно",
                   "marks": []
                 }
@@ -1279,27 +1041,27 @@
             },
             {
               "_type": "block",
-              "_key": "k36",
+              "_key": "k2b",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k35",
-                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "_key": "k2a",
+                  "text": "Местната търговия между кварталните навици и онлайн пазаруването. Тук показваме примерната структура на местна публикация с контекст и практични подробности.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k38",
+              "_key": "k2d",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k37",
+                  "_key": "k2c",
                   "text": "Какво следва",
                   "marks": []
                 }
@@ -1307,110 +1069,14 @@
             },
             {
               "_type": "block",
-              "_key": "k3a",
+              "_key": "k2f",
               "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k39",
-                  "text": "Проверка на първоизточника.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k3c",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k3b",
-                  "text": "Разговор със засегнатите хора.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k3e",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k3d",
-                  "text": "Актуализация при нова информация.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k3g",
-              "style": "blockquote",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k3f",
-                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k3n",
-              "style": "normal",
-              "markDefs": [
-                {
-                  "_key": "k3k",
-                  "_type": "link",
-                  "href": "/"
-                }
-              ],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k3h",
-                  "text": "Този пример показва ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k3i",
-                  "text": "акценти",
-                  "marks": [
-                    "strong"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k3j",
-                  "text": ", уточнения и ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k3l",
-                  "text": "връзка към началната страница",
-                  "marks": [
-                    "k3k"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k3m",
-                  "text": ".",
+                  "_key": "k2e",
+                  "text": "Преди реално публикуване редакцията ще провери фактите, датите и първоизточника. Описаното тук не е потвърдено събитие.",
                   "marks": []
                 }
               ]
@@ -1427,7 +1093,8 @@
           "image_credit": "Предоставен актив за демонстрацията",
           "featured": 0,
           "breaking": 0,
-          "story_key": "demo-biznes-magazini"
+          "story_key": "demo-biznes-magazini",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение"
         },
         "taxonomies": {
           "category": [
@@ -1449,46 +1116,40 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: Спортът в града: отвъд резултата",
-          "excerpt": "Примерен спортен материал за тренировките, общността и достъпа до спорт.",
+          "title": "Ботев Пловдив обяви програмата си за следващите три срещи",
+          "excerpt": "Домакинства, гостувания и подготовка — какво следва за отбора.",
           "content": [
             {
               "_type": "block",
-              "_key": "k3r",
+              "_key": "k2i",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k3o",
-                  "text": "Това е ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k3p",
-                  "text": "демонстрационен материал",
+                  "_key": "k2g",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "k3q",
-                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "_key": "k2h",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k3t",
+              "_key": "k2k",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k3s",
+                  "_key": "k2j",
                   "text": "Какво е важно",
                   "marks": []
                 }
@@ -1496,27 +1157,27 @@
             },
             {
               "_type": "block",
-              "_key": "k3v",
+              "_key": "k2m",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k3u",
-                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "_key": "k2l",
+                  "text": "Домакинства, гостувания и подготовка — какво следва за отбора. Тук показваме примерната структура на местна публикация с контекст и практични подробности.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k3x",
+              "_key": "k2o",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k3w",
+                  "_key": "k2n",
                   "text": "Какво следва",
                   "marks": []
                 }
@@ -1524,110 +1185,14 @@
             },
             {
               "_type": "block",
-              "_key": "k3z",
+              "_key": "k2q",
               "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k3y",
-                  "text": "Проверка на първоизточника.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k41",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k40",
-                  "text": "Разговор със засегнатите хора.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k43",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k42",
-                  "text": "Актуализация при нова информация.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k45",
-              "style": "blockquote",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k44",
-                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k4c",
-              "style": "normal",
-              "markDefs": [
-                {
-                  "_key": "k49",
-                  "_type": "link",
-                  "href": "/"
-                }
-              ],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k46",
-                  "text": "Този пример показва ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k47",
-                  "text": "акценти",
-                  "marks": [
-                    "strong"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k48",
-                  "text": ", уточнения и ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k4a",
-                  "text": "връзка към началната страница",
-                  "marks": [
-                    "k49"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k4b",
-                  "text": ".",
+                  "_key": "k2p",
+                  "text": "Преди реално публикуване редакцията ще провери фактите, датите и първоизточника. Описаното тук не е потвърдено събитие.",
                   "marks": []
                 }
               ]
@@ -1635,7 +1200,8 @@
           ],
           "featured": 0,
           "breaking": 0,
-          "story_key": "demo-sport-grad"
+          "story_key": "demo-sport-grad",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение"
         },
         "taxonomies": {
           "category": [
@@ -1657,46 +1223,40 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: Областта отблизо: място за историите от Асеновград",
-          "excerpt": "Демонстрация на регионална история с ясно обозначено местоположение.",
+          "title": "Нови пешеходни маршрути свързват Асеновград с близките села",
+          "excerpt": "Кратки разходки, местни истории и идеи за ден извън града.",
           "content": [
             {
               "_type": "block",
-              "_key": "k4g",
+              "_key": "k2t",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k4d",
-                  "text": "Това е ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k4e",
-                  "text": "демонстрационен материал",
+                  "_key": "k2r",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "k4f",
-                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "_key": "k2s",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k4i",
+              "_key": "k2v",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k4h",
+                  "_key": "k2u",
                   "text": "Какво е важно",
                   "marks": []
                 }
@@ -1704,27 +1264,27 @@
             },
             {
               "_type": "block",
-              "_key": "k4k",
+              "_key": "k2x",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k4j",
-                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "_key": "k2w",
+                  "text": "Кратки разходки, местни истории и идеи за ден извън града. Тук показваме примерната структура на местна публикация с контекст и практични подробности.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k4m",
+              "_key": "k2z",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k4l",
+                  "_key": "k2y",
                   "text": "Какво следва",
                   "marks": []
                 }
@@ -1732,110 +1292,14 @@
             },
             {
               "_type": "block",
-              "_key": "k4o",
+              "_key": "k31",
               "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k4n",
-                  "text": "Проверка на първоизточника.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k4q",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k4p",
-                  "text": "Разговор със засегнатите хора.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k4s",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k4r",
-                  "text": "Актуализация при нова информация.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k4u",
-              "style": "blockquote",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k4t",
-                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k51",
-              "style": "normal",
-              "markDefs": [
-                {
-                  "_key": "k4y",
-                  "_type": "link",
-                  "href": "/"
-                }
-              ],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k4v",
-                  "text": "Този пример показва ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k4w",
-                  "text": "акценти",
-                  "marks": [
-                    "strong"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k4x",
-                  "text": ", уточнения и ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k4z",
-                  "text": "връзка към началната страница",
-                  "marks": [
-                    "k4y"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k50",
-                  "text": ".",
+                  "_key": "k30",
+                  "text": "Преди реално публикуване редакцията ще провери фактите, датите и първоизточника. Описаното тук не е потвърдено събитие.",
                   "marks": []
                 }
               ]
@@ -1852,7 +1316,8 @@
           "image_credit": "Предоставен актив за демонстрацията",
           "featured": 0,
           "breaking": 0,
-          "story_key": "demo-oblast-asenovgrad"
+          "story_key": "demo-oblast-asenovgrad",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение"
         },
         "taxonomies": {
           "category": [
@@ -1874,201 +1339,83 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: Уикенд в Пловдив: време за разходка, култура и семейство",
-          "excerpt": "Примерен седмичен гид. Предложенията показват структурата, а не програма с потвърдени събития.",
+          "title": "17 идеи за този уикенд в Пловдив: концерти, фестивали и събития за деца",
+          "excerpt": "С деца, безплатно или вечер — изберете своя ритъм за събота и неделя.",
           "content": [
             {
               "_type": "block",
-              "_key": "k55",
+              "_key": "k34",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k52",
-                  "text": "Това е ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k53",
-                  "text": "демонстрационен гид",
+                  "_key": "k32",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "k54",
-                  "text": ", не реална програма. Няма потвърдени събития, часове, места или цени.",
+                  "_key": "k33",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k57",
+              "_key": "k36",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k56",
-                  "text": "Топ предложения",
+                  "_key": "k35",
+                  "text": "Какво е важно",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k59",
+              "_key": "k38",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k58",
-                  "text": "Пример за подбор: градска разходка, посещение на изложба и време с близките. Преди публикация редакцията ще провери всяко предложение.",
+                  "_key": "k37",
+                  "text": "С деца, безплатно или вечер — изберете своя ритъм за събота и неделя. Тук показваме примерната структура на местна публикация с контекст и практични подробности.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k5b",
+              "_key": "k3a",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k5a",
-                  "text": "Петък",
+                  "_key": "k39",
+                  "text": "Какво следва",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k5d",
+              "_key": "k3c",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k5c",
-                  "text": "Място за вечерна културна програма. Тук ще има конкретни часове и официална връзка, когато са потвърдени.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k5f",
-              "style": "h2",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k5e",
-                  "text": "Събота",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k5h",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k5g",
-                  "text": "Място за дневен маршрут и идея за по-дълга разходка.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k5j",
-              "style": "h2",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k5i",
-                  "text": "Неделя",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k5l",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k5k",
-                  "text": "Място за спокойни предложения преди началото на новата седмица.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k5n",
-              "style": "h2",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k5m",
-                  "text": "С деца",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k5p",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k5o",
-                  "text": "Тук ще посочим възрастовите ограничения, достъпността и необходимостта от предварително записване.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k5r",
-              "style": "h2",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k5q",
-                  "text": "Безплатни събития",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k5t",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k5s",
-                  "text": "Този раздел ще съдържа само предложения с проверени условия за свободен вход.",
+                  "_key": "k3b",
+                  "text": "Преди реално публикуване редакцията ще провери фактите, датите и първоизточника. Описаното тук не е потвърдено събитие.",
                   "marks": []
                 }
               ]
@@ -2076,16 +1423,17 @@
           ],
           "featured_image": {
             "$media": {
-              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/plovdiv-wide-golden.png",
-              "alt": "Илюстративна панорама на Пловдив",
-              "filename": "plovdiv-wide-golden.png"
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/demo/fountain.jpg",
+              "filename": "fountain.jpg",
+              "alt": "Архивна илюстративна снимка на Пловдив; не показва описаното демо събитие"
             }
           },
-          "image_caption": "Илюстративна панорама на Пловдив.",
-          "image_credit": "Предоставен актив за демонстрацията",
+          "image_caption": "Архивен кадър на Пловдив. Илюстрация към примерен материал.",
+          "image_credit": "Michael Desnoyelles / Wikimedia Commons · CC BY-SA 4.0",
           "featured": 0,
           "breaking": 0,
-          "story_key": "demo-uikend-plovdiv"
+          "story_key": "demo-uikend-plovdiv",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение"
         },
         "taxonomies": {
           "category": [
@@ -2107,46 +1455,40 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: България и светът: как ще обясняваме контекста",
-          "excerpt": "Пример за национален обзор с илюстративна снимка от предоставените тестови изображения.",
+          "title": "Как новите правила за градски транспорт ще засегнат пътниците",
+          "excerpt": "Практичните въпроси зад националната тема и какво означават те за Пловдив.",
           "content": [
             {
               "_type": "block",
-              "_key": "k5x",
+              "_key": "k3f",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k5u",
-                  "text": "Това е ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k5v",
-                  "text": "демонстрационен материал",
+                  "_key": "k3d",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "k5w",
-                  "text": ", създаден за преглед на дизайна на PlovdivToday. Текстът не съобщава за реално събитие.",
+                  "_key": "k3e",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k5z",
+              "_key": "k3h",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k5y",
+                  "_key": "k3g",
                   "text": "Какво е важно",
                   "marks": []
                 }
@@ -2154,27 +1496,27 @@
             },
             {
               "_type": "block",
-              "_key": "k61",
+              "_key": "k3j",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k60",
-                  "text": "Местната история започва с конкретния въпрос на читателя: какво се променя в ежедневието му? В бъдещите публикации тук ще има проверени факти, документи и ясно посочени източници.",
+                  "_key": "k3i",
+                  "text": "Практичните въпроси зад националната тема и какво означават те за Пловдив. Тук показваме примерната структура на местна публикация с контекст и практични подробности.",
                   "marks": []
                 }
               ]
             },
             {
               "_type": "block",
-              "_key": "k63",
+              "_key": "k3l",
               "style": "h2",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k62",
+                  "_key": "k3k",
                   "text": "Какво следва",
                   "marks": []
                 }
@@ -2182,127 +1524,23 @@
             },
             {
               "_type": "block",
-              "_key": "k65",
+              "_key": "k3n",
               "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k64",
-                  "text": "Проверка на първоизточника.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k67",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k66",
-                  "text": "Разговор със засегнатите хора.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k69",
-              "style": "normal",
-              "listItem": "bullet",
-              "level": 1,
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k68",
-                  "text": "Актуализация при нова информация.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k6b",
-              "style": "blockquote",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k6a",
-                  "text": "Полезната местна журналистика дава контекст и отговаря на конкретни въпроси.",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k6i",
-              "style": "normal",
-              "markDefs": [
-                {
-                  "_key": "k6f",
-                  "_type": "link",
-                  "href": "/"
-                }
-              ],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k6c",
-                  "text": "Този пример показва ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k6d",
-                  "text": "акценти",
-                  "marks": [
-                    "strong"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k6e",
-                  "text": ", уточнения и ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k6g",
-                  "text": "връзка към началната страница",
-                  "marks": [
-                    "k6f"
-                  ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k6h",
-                  "text": ".",
+                  "_key": "k3m",
+                  "text": "Преди реално публикуване редакцията ще провери фактите, датите и първоизточника. Описаното тук не е потвърдено събитие.",
                   "marks": []
                 }
               ]
             }
           ],
-          "featured_image": {
-            "$media": {
-              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/trump-test.jpg",
-              "alt": "Предоставена примерна снимка",
-              "filename": "trump-test.jpg"
-            }
-          },
-          "image_caption": "Тестова снимка; не е свързана с новинарско твърдение.",
-          "image_credit": "Предоставен актив за демонстрацията",
           "featured": 0,
           "breaking": 0,
-          "story_key": "demo-bulgaria-kontekst"
+          "story_key": "demo-bulgaria-kontekst",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение"
         },
         "taxonomies": {
           "category": [
@@ -2321,27 +1559,83 @@
         "status": "published",
         "locale": "bg",
         "data": {
-          "title": "ДЕМО: Кратко съобщение: пример за бързо обновяване",
-          "excerpt": "Тест на краткия новинарски формат. Това не е съобщение за реално събитие.",
+          "title": "Общината представя проект за повече зелени площи в кварталите",
+          "excerpt": "Предложението поставя акцент върху сянката, пешеходните връзки и местата за срещи.",
           "content": [
             {
               "_type": "block",
-              "_key": "k6l",
+              "_key": "k3q",
               "style": "normal",
               "markDefs": [],
               "children": [
                 {
                   "_type": "span",
-                  "_key": "k6j",
-                  "text": "Демонстрационно съобщение.",
+                  "_key": "k3o",
+                  "text": "Демонстрационен материал.",
                   "marks": [
                     "strong"
                   ]
                 },
                 {
                   "_type": "span",
-                  "_key": "k6k",
-                  "text": " Няма реално извънредно събитие. Този кратък текст показва как ще изглежда бърза публикация с последваща актуализация.",
+                  "_key": "k3p",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3s",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3r",
+                  "text": "Какво е важно",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3u",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3t",
+                  "text": "Предложението поставя акцент върху сянката, пешеходните връзки и местата за срещи. Тук показваме примерната структура на местна публикация с контекст и практични подробности.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3w",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3v",
+                  "text": "Какво следва",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3y",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3x",
+                  "text": "Преди реално публикуване редакцията ще провери фактите, датите и първоизточника. Описаното тук не е потвърдено събитие.",
                   "marks": []
                 }
               ]
@@ -2349,7 +1643,8 @@
           ],
           "featured": 0,
           "breaking": 1,
-          "story_key": "demo-kratka-novina"
+          "story_key": "demo-kratka-novina",
+          "source_name": "Редакционен демо сценарий · не е официално съобщение"
         },
         "taxonomies": {
           "category": [
@@ -2357,6 +1652,814 @@
           ],
           "location": [
             "severen"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-trafik-spirki",
+        "slug": "demo-trafik-spirki",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "Преместват две автобусни спирки заради ремонт на тротоара",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k41",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3z",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k40",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k43",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k42",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k45",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k44",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-trafik-spirki",
+          "source_name": "Редакционен демо сценарий"
+        },
+        "taxonomies": {
+          "category": [
+            "trafik"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-trafik-parking",
+        "slug": "demo-trafik-parking",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "Променят достъпа до паркинга до Централна гара",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k48",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k46",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k47",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4a",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k49",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4c",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4b",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-trafik-parking",
+          "source_name": "Редакционен демо сценарий"
+        },
+        "taxonomies": {
+          "category": [
+            "trafik"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-trafik-velosipedi",
+        "slug": "demo-trafik-velosipedi",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "Велосипедистите ще преминават по временен маршрут в центъра",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k4f",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4d",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4e",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4h",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4g",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4j",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4i",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-trafik-velosipedi",
+          "source_name": "Редакционен демо сценарий"
+        },
+        "taxonomies": {
+          "category": [
+            "trafik"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-trafik-bulevard",
+        "slug": "demo-trafik-bulevard",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "Ремонтът на булеварда приключва поетапно: кои участъци се отварят първо",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k4m",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4k",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4l",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4o",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4n",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4q",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4p",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-trafik-bulevard",
+          "source_name": "Редакционен демо сценарий"
+        },
+        "taxonomies": {
+          "category": [
+            "trafik"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-biznes-atelieta",
+        "slug": "demo-biznes-atelieta",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "Млади занаятчии отварят общо ателие в Капана",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k4t",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4r",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4s",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4v",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4u",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4x",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4w",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-biznes-atelieta",
+          "source_name": "Редакционен демо сценарий",
+          "featured_image": {
+            "$media": {
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/demo/street.jpg",
+              "filename": "street.jpg",
+              "alt": "Архивна илюстративна снимка на Пловдив; не показва описаното демо събитие"
+            }
+          },
+          "image_caption": "Архивен кадър. Илюстрация към демо материал.",
+          "image_credit": "Nenko Lazarov / Wikimedia Commons · CC BY 2.5"
+        },
+        "taxonomies": {
+          "category": [
+            "biznes"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-biznes-pazar",
+        "slug": "demo-biznes-pazar",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "Съботният пазар среща местни производители и малки семейни фирми",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k50",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4y",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4z",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k52",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k51",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k54",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k53",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-biznes-pazar",
+          "source_name": "Редакционен демо сценарий",
+          "featured_image": {
+            "$media": {
+              "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/brand/demo/pedestrian.jpg",
+              "filename": "pedestrian.jpg",
+              "alt": "Архивна илюстративна снимка на Пловдив; не показва описаното демо събитие"
+            }
+          },
+          "image_caption": "Архивен кадър. Илюстрация към демо материал.",
+          "image_credit": "Realsteel007 / Wikimedia Commons · CC BY-SA 4.0"
+        },
+        "taxonomies": {
+          "category": [
+            "biznes"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-kultura-izlozhba",
+        "slug": "demo-kultura-izlozhba",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "Нова изложба събира фотографии от живота в пловдивските квартали",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k57",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k55",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k56",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k59",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k58",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5b",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5a",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-kultura-izlozhba",
+          "source_name": "Редакционен демо сценарий"
+        },
+        "taxonomies": {
+          "category": [
+            "kultura"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-kultura-stsena",
+        "slug": "demo-kultura-stsena",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "Малката сцена и голямата публика: разговор за независимия театър",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k5e",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5c",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5d",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5g",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5f",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5i",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5h",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-kultura-stsena",
+          "source_name": "Редакционен демо сценарий"
+        },
+        "taxonomies": {
+          "category": [
+            "kultura"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-uikend-detsa",
+        "slug": "demo-uikend-detsa",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "С деца в Пловдив: кратки разходки и творчески занимания",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k5l",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5j",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5k",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5n",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5m",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5p",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5o",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-uikend-detsa",
+          "source_name": "Редакционен демо сценарий"
+        },
+        "taxonomies": {
+          "category": [
+            "uikend"
+          ],
+          "location": [
+            "plovdiv"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "demo-uikend-bezplatno",
+        "slug": "demo-uikend-bezplatno",
+        "status": "published",
+        "locale": "bg",
+        "data": {
+          "title": "Безплатно този уикенд: три идеи за вечер навън",
+          "excerpt": "Идеи и практични подробности в примерен материал за преглед на PlovdivToday.",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k5s",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5q",
+                  "text": "Демонстрационен материал.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5r",
+                  "text": " Описаните промени, програми и събития са измислени за преглед на дизайна. Не използвайте текста за планиране на пътуване или посещение.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5u",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5t",
+                  "text": "Полезни подробности",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5w",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5v",
+                  "text": "Този сценарий показва как изглежда кратка публикация с по-дълго българско заглавие. Програмата, датите и маршрутите не са потвърдени.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "featured": 0,
+          "breaking": 0,
+          "story_key": "demo-uikend-bezplatno",
+          "source_name": "Редакционен демо сценарий"
+        },
+        "taxonomies": {
+          "category": [
+            "uikend"
+          ],
+          "location": [
+            "plovdiv"
           ]
         },
         "bylines": [

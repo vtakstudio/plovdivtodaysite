@@ -7,30 +7,42 @@ const displayedSections = sections.filter(([slug]) => slug !== "kriminalni");
 const [latest, featured, ...blocks] = await Promise.all([
   getEmDashCollection("articles", { locale: "bg", status: "published", limit: 9, orderBy: { published_at: "desc" } }),
   getEmDashCollection("articles", { locale: "bg", status: "published", where: { featured: "1" }, limit: 1, orderBy: { published_at: "desc" } }),
-  ...displayedSections.map(([category]) => getEmDashCollection("articles", { locale: "bg", status: "published", where: { category }, limit: 3, orderBy: { published_at: "desc" } })),
+  ...displayedSections.map(([category]) => getEmDashCollection("articles", { locale: "bg", status: "published", where: { category }, limit: 8, orderBy: { published_at: "desc" } })),
 ]);
 if (Astro.cache?.enabled) for (const result of [latest, featured, ...blocks]) Astro.cache.set(result.cacheHint);
 const lead = featured.entries[0] || latest.entries[0];
 const secondary = latest.entries.filter(entry => entry.id !== lead?.id).slice(0, 4);
 const blockBySlug = new Map(displayedSections.map(([slug], index) => [slug, blocks[index].entries]));
+const weekend = blockBySlug.get("uikend")?.find(article => article.data.featured_image);
+const weekendStart = weekend?.data.publishedAt ? new Date(weekend.data.publishedAt) : undefined;
+if (weekendStart) weekendStart.setUTCDate(weekendStart.getUTCDate() + ((6 - weekendStart.getUTCDay() + 7) % 7));
+const weekendEnd = weekendStart ? new Date(weekendStart.getTime() + 86400000) : undefined;
+const weekendDates = weekendStart && weekendEnd ? `${weekendStart.getUTCDate()}–${weekendEnd.toLocaleDateString("bg-BG", { day: "numeric", month: "long", timeZone: "Europe/Sofia" })}` : undefined;
 const sectionOrder = ["plovdiv", "trafik", "uikend", "kultura", "oblast-plovdiv", "biznes", "sport", "bulgaria"] as const;
 ---
 <Newsroom title="Пловдив днес" description="Новините от Пловдив и областта: градът, трафикът, културата, бизнесът и уикендът.">
   <div class="wrap front-page">
-    {lead ? <div class="top-stories"><StoryCard article={lead} variant="lead" /><div class="secondary-stories">{secondary.map(article => <StoryCard article={article} variant="compact" />)}</div></div> : <p class="empty">Все още няма публикувани материали.</p>}
+    {latest.entries.length > 0 && <nav class="latest-strip" aria-label="Най-новото"><a class="latest-strip-label" href="#latest-heading"><span class="live-dot" aria-hidden="true"></span>Последни новини ↓</a>{latest.entries.slice(0, 3).map(article => <a class="latest-strip-story" href={`/novini/${article.id}`}><time datetime={article.data.publishedAt?.toISOString()}>{formatDate(article.data.publishedAt, true)}</time>{article.data.title}{article.data.story_key?.startsWith("demo-") && <small>Демо</small>}</a>)}</nav>}
+    {lead ? <div class="top-stories"><StoryCard article={lead} variant="lead" /></div> : <p class="empty">Все още няма публикувани материали.</p>}
     <section class="news-section latest-section" aria-labelledby="latest-heading">
       <div class="section-heading"><h2 id="latest-heading"><span class="live-dot" aria-hidden="true"></span>Последни новини</h2><a href="/novini/">Всички новини →</a></div>
-      <ol class="latest-feed">{latest.entries.slice(0, 8).map(article => <li><time datetime={article.data.publishedAt?.toISOString()}>{formatDate(article.data.publishedAt, true)}</time><a href={`/novini/${article.id}`}>{article.data.title}</a></li>)}</ol>
+      <ol class="latest-feed">{latest.entries.slice(0, 8).map(article => <li><time datetime={article.data.publishedAt?.toISOString()}>{formatDate(article.data.publishedAt, true)}</time><a href={`/novini/${article.id}`}>{article.data.title}{article.data.story_key?.startsWith("demo-") && <small class="demo-marker"> · демо</small>}</a></li>)}</ol>
     </section>
+    {secondary.length > 0 && <div class="secondary-stories">{secondary.map(article => <StoryCard article={article} variant="compact" />)}</div>}
     <div class="home-sections">
     {sectionOrder.map((slug, index) => {
       const articles = blockBySlug.get(slug) || [];
       const label = displayedSections.find(([key]) => key === slug)?.[1];
-      const magazine = slug === "uikend" || slug === "kultura";
-      return <section class:list={["news-section", `home-section-${slug}`, { "weekend-section": slug === "uikend", "magazine-section": magazine }]} aria-labelledby={`section-${slug}`}>
-        {slug === "uikend" && <p class="weekend-label">По-бавно. По-близо. Навън.</p>}
+      const preferred = ["plovdiv", "kultura", "uikend"].includes(slug) ? "feature" : ["biznes", "oblast-plovdiv"].includes(slug) ? "standard" : "feed";
+      const layout = articles.length < 2 && slug !== "uikend" ? "feed" : preferred;
+      const primary = layout === "feature" || slug === "uikend" ? articles.find(article => article.data.featured) || articles.find(article => article.data.featured_image) : undefined;
+      const ordered = primary ? [primary, ...articles.filter(article => article.id !== primary.id)] : articles;
+      const visible = ordered.slice(0, layout === "feed" ? 8 : 3);
+      return <section class:list={["news-section", `section-${layout}`, { "weekend-section": slug === "uikend" }]} aria-labelledby={`section-${slug}`}>
+        {slug === "uikend" && weekendDates && <p class="weekend-label">{weekendDates}</p>}
         <div class="section-heading"><h2 id={`section-${slug}`}><a href={`/${slug}/`}><span class="section-number" aria-hidden="true">{String(index + 1).padStart(2, "0")} /</span>{slug === "uikend" ? "Уикенд в Пловдив" : label}</a></h2><a href={`/${slug}/`}>Виж всички →</a></div>
-        {articles.length ? magazine ? <><StoryCard article={articles[0]} variant="weekend" />{articles.length > 1 && <div class="story-grid">{articles.slice(1).map(article => <StoryCard article={article} variant="compact" />)}</div>}</> : <div class="story-grid">{articles.map((article, articleIndex) => <StoryCard article={article} variant={slug === "biznes" || (slug === "plovdiv" && articleIndex === 1) ? "standard" : "compact"} />)}</div> : <p class="empty">Очаквайте първите материали в този раздел.</p>}
+        {visible.length ? <div class="section-stories">{layout === "feature" ? <><StoryCard article={visible[0]} variant={slug === "uikend" ? "weekend" : "standard"} /><div class="feature-secondary">{visible.slice(1).map(article => <StoryCard article={article} variant="compact" />)}</div></> : visible.map(article => <StoryCard article={article} variant={layout === "feed" ? "compact" : "standard"} />)}</div> : <p class="empty">Очаквайте първите материали в този раздел.</p>}
+        {slug === "uikend" && visible.length > 0 && <nav class="weekend-topics" aria-label="Идеи за уикенда"><a href="/search?q=деца">С деца →</a><a href="/search?q=безплатно">Безплатно →</a><a href="/search?q=вечер">Вечер →</a></nav>}
       </section>;
     })}
     </div>
