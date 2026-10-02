@@ -36,3 +36,7 @@ Image cases: pedestrian.jpg (3264×1836, 16:9/detailed), street.jpg (1920×2560,
 - Production article desktop/mobile screenshots are provided after the automatic main-branch deployment.
 
 Frontend v1 is ready for final visual review. Further design exploration and n8n are outside this pass. Weather remains an unavailable-value placeholder. The next milestone is Source Registry → ingestion → deduplication → generation → publishing → image strategy.
+
+## Local review correction (not deployed)
+
+Following Val’s review, return the lead to approximately 48% text / 52% image and compact section thumbnails to a 2:1 display crop. Cap article imagery at 840px wide and portrait imagery at 540px high. Use one 1px divider token throughout; reverse its ink/cream contrast only in the dark footer. These corrections are local pending approval. Every future deployment, including any push to main, requires Val’s explicit release approval.
