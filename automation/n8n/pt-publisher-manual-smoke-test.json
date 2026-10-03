@@ -1,0 +1,92 @@
+{
+  "name": "PT — Publisher manual smoke test",
+  "nodes": [
+    {
+      "id": "manual",
+      "name": "Manual test only",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "payload",
+      "name": "Smoke fixture",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "return [{json:{\n  \"story_key\": \"automation-smoke-plovdiv-001\",\n  \"title\": \"ТЕСТ n8n: Проверка на publisher-а за Пловдив\",\n  \"excerpt\": \"Временен технически материал. Не описва реална новина и ще бъде преместен в кошчето след проверката.\",\n  \"content\": [\n    {\n      \"_type\": \"block\",\n      \"_key\": \"intro\",\n      \"style\": \"normal\",\n      \"markDefs\": [],\n      \"children\": [\n        {\n          \"_type\": \"span\",\n          \"_key\": \"intro-text\",\n          \"text\": \"Това е временна проверка на publisher v1, без реално новинарско твърдение.\",\n          \"marks\": []\n        }\n      ]\n    },\n    {\n      \"_type\": \"block\",\n      \"_key\": \"heading\",\n      \"style\": \"h2\",\n      \"markDefs\": [],\n      \"children\": [\n        {\n          \"_type\": \"span\",\n          \"_key\": \"heading-text\",\n          \"text\": \"Какво проверяваме\",\n          \"marks\": []\n        }\n      ]\n    },\n    {\n      \"_type\": \"block\",\n      \"_key\": \"list-one\",\n      \"style\": \"normal\",\n      \"listItem\": \"bullet\",\n      \"level\": 1,\n      \"markDefs\": [],\n      \"children\": [\n        {\n          \"_type\": \"span\",\n          \"_key\": \"list-one-text\",\n          \"text\": \"Чернова, категории и авторски подпис\",\n          \"marks\": []\n        }\n      ]\n    },\n    {\n      \"_type\": \"block\",\n      \"_key\": \"list-two\",\n      \"style\": \"normal\",\n      \"listItem\": \"bullet\",\n      \"level\": 1,\n      \"markDefs\": [],\n      \"children\": [\n        {\n          \"_type\": \"span\",\n          \"_key\": \"list-two-text\",\n          \"text\": \"Публикуване и обновяване на същата статия\",\n          \"marks\": []\n        }\n      ]\n    },\n    {\n      \"_type\": \"block\",\n      \"_key\": \"source-link\",\n      \"style\": \"normal\",\n      \"markDefs\": [\n        {\n          \"_type\": \"link\",\n          \"_key\": \"official-link\",\n          \"href\": \"https://www.plovdiv.bg/\"\n        }\n      ],\n      \"children\": [\n        {\n          \"_type\": \"span\",\n          \"_key\": \"link-text\",\n          \"text\": \"Официален сайт на община Пловдив\",\n          \"marks\": [\n            \"official-link\"\n          ]\n        }\n      ]\n    }\n  ],\n  \"category\": \"plovdiv\",\n  \"locations\": [\n    \"tsentralen\"\n  ],\n  \"source_name\": \"Техническа проверка на PlovdivToday\",\n  \"source_url\": \"https://www.plovdiv.bg/\",\n  \"featured\": false,\n  \"breaking\": false,\n  \"featured_image\": null,\n  \"publish_mode\": \"draft\"\n}}];"
+      }
+    },
+    {
+      "id": "publisher",
+      "name": "Call PT Publisher",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        520,
+        0
+      ],
+      "parameters": {
+        "source": "database",
+        "workflowId": {
+          "__rl": true,
+          "value": "Wl3I8fbJ7VkACeH3",
+          "mode": "id"
+        },
+        "mode": "each",
+        "workflowInputs": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "waitForSubWorkflow": true
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Manual test only": {
+      "main": [
+        [
+          {
+            "node": "Smoke fixture",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Smoke fixture": {
+      "main": [
+        [
+          {
+            "node": "Call PT Publisher",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Europe/Sofia",
+    "saveManualExecutions": true,
+    "saveDataSuccessExecution": "all",
+    "saveDataErrorExecution": "all",
+    "executionTimeout": 180
+  }
+}

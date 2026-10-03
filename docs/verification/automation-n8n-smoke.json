@@ -1,0 +1,206 @@
+{
+  "initialPublished": {
+    "id": "01M3YYZKYF53Z08MM1V8XJJSA4",
+    "slug": "тест-n8n-проверка-на-publisher-а-за-пловдив",
+    "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-n8n-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-publisher-%D0%B0-%D0%B7%D0%B0-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/",
+    "status": "published",
+    "publishedAt": "2026-10-02T18:47:26.930Z",
+    "updatedAt": "2026-10-02T18:47:26.930Z",
+    "title": "ТЕСТ n8n: Проверка на publisher-а за Пловдив — обновено",
+    "body": "ТЕСТ n8n: Обновен текст преди първото публикуване.",
+    "category": {
+      "terms": [
+        {
+          "id": "01M3W74SK4T1K1SSQ3G95KFY0V",
+          "name": "category",
+          "slug": "plovdiv",
+          "label": "Пловдив",
+          "parentId": null,
+          "locale": "bg",
+          "translationGroup": "01M3W74SK4T1K1SSQ3G95KFY0V"
+        }
+      ],
+      "unresolved": [],
+      "entryLocale": "bg",
+      "defaultLocale": "bg",
+      "implicitDefaultLocale": false
+    },
+    "location": {
+      "terms": [
+        {
+          "id": "01M3W74VWQTABMDQS9BVS5RB5M",
+          "name": "location",
+          "slug": "tsentralen",
+          "label": "Централен",
+          "parentId": "01M3W74VHRK2ZZ2G9J8PHDXJR2",
+          "locale": "bg",
+          "translationGroup": "01M3W74VWQTABMDQS9BVS5RB5M"
+        }
+      ],
+      "unresolved": [],
+      "entryLocale": "bg",
+      "defaultLocale": "bg",
+      "implicitDefaultLocale": false
+    },
+    "public": {
+      "http": 200,
+      "title": true,
+      "body": true,
+      "byline": true,
+      "category": true,
+      "location": true,
+      "jsonLd": true
+    }
+  },
+  "runs": [
+    {
+      "id": "399936",
+      "childExecutionId": "399937",
+      "result": {
+        "success": true,
+        "action": "created",
+        "story_key": "automation-smoke-plovdiv-001",
+        "emdash_id": "01M3YYZKYF53Z08MM1V8XJJSA4",
+        "slug": "тест-n8n-проверка-на-publisher-а-за-пловдив",
+        "status": "draft",
+        "public_url": null
+      }
+    },
+    {
+      "id": "399940",
+      "childExecutionId": "399941",
+      "result": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-plovdiv-001",
+        "emdash_id": "01M3YYZKYF53Z08MM1V8XJJSA4",
+        "slug": "тест-n8n-проверка-на-publisher-а-за-пловдив",
+        "status": "draft",
+        "public_url": null
+      }
+    },
+    {
+      "id": "399944",
+      "childExecutionId": "399945",
+      "result": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-plovdiv-001",
+        "emdash_id": "01M3YYZKYF53Z08MM1V8XJJSA4",
+        "slug": "тест-n8n-проверка-на-publisher-а-за-пловдив",
+        "status": "published",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-n8n-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-publisher-%D0%B0-%D0%B7%D0%B0-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "id": "399949",
+      "childExecutionId": "399950",
+      "result": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-plovdiv-001",
+        "emdash_id": "01M3YYZKYF53Z08MM1V8XJJSA4",
+        "slug": "тест-n8n-проверка-на-publisher-а-за-пловдив",
+        "status": "draft",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-n8n-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-publisher-%D0%B0-%D0%B7%D0%B0-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "id": "399953",
+      "childExecutionId": "399954",
+      "result": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-plovdiv-001",
+        "emdash_id": "01M3YYZKYF53Z08MM1V8XJJSA4",
+        "slug": "тест-n8n-проверка-на-publisher-а-за-пловдив",
+        "status": "published",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-n8n-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-publisher-%D0%B0-%D0%B7%D0%B0-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "id": "399957",
+      "childExecutionId": "399958",
+      "result": {
+        "success": true,
+        "action": "created",
+        "story_key": "automation-smoke-trafik-n8n-001",
+        "emdash_id": "01M3YZ8WHDE1HDPH0MQSFY1FQC",
+        "slug": "тест-n8n-трафик-и-район-тракия",
+        "status": "draft",
+        "public_url": null
+      }
+    },
+    {
+      "id": "399961",
+      "childExecutionId": "399962",
+      "result": {
+        "success": false,
+        "story_key": "automation-smoke-trafik-n8n-001",
+        "emdash_id": "01M3YZ8WHDE1HDPH0MQSFY1FQC",
+        "code": "ENTRY_LOCKED",
+        "message": "An editor holds this entry; automation will not override the lock",
+        "retryable": true
+      }
+    }
+  ],
+  "stagedDraft": {
+    "status": "published",
+    "draftRevisionId": "01M3YZ5B1HP7GSCGPC86DR89JR",
+    "title": "ТЕСТ n8n: Нова редакция, запазена като чернова",
+    "body": "ТЕСТ n8n: Нов текст за проверка на чернова върху публикувана статия.",
+    "sameId": true,
+    "sameSlug": true,
+    "publicHttp": 200,
+    "oldBodyLive": true,
+    "newBodyHidden": true
+  },
+  "republished": {
+    "status": "published",
+    "draftRevisionId": null,
+    "sameId": true,
+    "sameSlug": true,
+    "originalPublishedAtPreserved": true,
+    "dateModifiedAdvanced": true,
+    "newBodyLive": true,
+    "oldBodyRemoved": true,
+    "publicHttp": 200
+  },
+  "traffic": {
+    "id": "01M3YZ8WHDE1HDPH0MQSFY1FQC",
+    "status": "draft",
+    "story_key": "automation-smoke-trafik-n8n-001",
+    "category": [
+      "trafik"
+    ],
+    "location": [
+      "trakia"
+    ],
+    "revBeforeLock": "MToyMDI2LTEwLTAyVDE4OjUwOjUwLjc5N1o="
+  },
+  "lockAcquired": true,
+  "lockRefusedWithoutWrite": true,
+  "lockReleased": true,
+  "revisionRequests": [
+    {
+      "method": "PUT",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/_emdash/api/content/articles/01M3YYZKYF53Z08MM1V8XJJSA4",
+      "rev": "ODoyMDI2LTEwLTAyVDE4OjQ3OjI2LjkzMFo="
+    },
+    {
+      "method": "POST",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/_emdash/api/content/articles/01M3YYZKYF53Z08MM1V8XJJSA4/publish",
+      "rev": "MTA6MjAyNi0xMC0wMlQxODo0NzoyNi45MzBa"
+    }
+  ],
+  "n8nVersion": "2.20.6",
+  "cleanup": {
+    "trashedIds": [
+      "01M3YZ8WHDE1HDPH0MQSFY1FQC",
+      "01M3YYZKYF53Z08MM1V8XJJSA4"
+    ],
+    "activeTotal": 20,
+    "activeSmokeKeys": [],
+    "publicHttp": 404
+  }
+}

@@ -93,6 +93,8 @@
           "slug": "story_key",
           "label": "Вътрешен идентификатор (незадължителен)",
           "type": "string",
+          "unique": true,
+          "indexed": true,
           "translatable": false
         }
       ]

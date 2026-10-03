@@ -1,0 +1,917 @@
+{
+  "date": "2026-10-03",
+  "timezone": "Europe/Sofia",
+  "workflowId": "SgSGimz2bj51o2J2",
+  "initial_execution": "402149",
+  "candidate_count": 71,
+  "published_count": 10,
+  "grouped_candidate_count": 20,
+  "source_counts": {
+    "plovdiv_municipality": 8,
+    "bta_plovdiv": 16,
+    "plovdiv_regional_admin": 1,
+    "plovdiv24": 36,
+    "podtepeto": 10
+  },
+  "source_failures": [
+    {
+      "source_id": "odmvr_plovdiv",
+      "http_status": 403
+    }
+  ],
+  "usage": {
+    "selector": {
+      "prompt_tokens": 13446,
+      "completion_tokens": 4267,
+      "total_tokens": 17713,
+      "cost": 0.003814175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 13443,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003814175,
+        "upstream_inference_prompt_cost": 0.001680675,
+        "upstream_inference_completions_cost": 0.0021335
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3481,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "writers": [
+      {
+        "prompt_tokens": 1663,
+        "completion_tokens": 414,
+        "total_tokens": 2077,
+        "cost": 0.008296,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1660,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.008296,
+          "upstream_inference_prompt_cost": 0.004156,
+          "upstream_inference_completions_cost": 0.00414
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 1516,
+        "completion_tokens": 530,
+        "total_tokens": 2046,
+        "cost": 0.0064149,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1114,
+          "cache_write_tokens": 399,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0064149,
+          "upstream_inference_prompt_cost": 0.0011149,
+          "upstream_inference_completions_cost": 0.0053
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 256,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 1749,
+        "completion_tokens": 671,
+        "total_tokens": 2420,
+        "cost": 0.0084074,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1114,
+          "cache_write_tokens": 632,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0084074,
+          "upstream_inference_prompt_cost": 0.0016974,
+          "upstream_inference_completions_cost": 0.00671
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 83,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 2034,
+        "completion_tokens": 869,
+        "total_tokens": 2903,
+        "cost": 0.0110999,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1114,
+          "cache_write_tokens": 917,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0110999,
+          "upstream_inference_prompt_cost": 0.0024099,
+          "upstream_inference_completions_cost": 0.00869
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 79,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 1351,
+        "completion_tokens": 540,
+        "total_tokens": 1891,
+        "cost": 0.0061024,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1114,
+          "cache_write_tokens": 234,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0061024,
+          "upstream_inference_prompt_cost": 0.0007024,
+          "upstream_inference_completions_cost": 0.0054
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 271,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 2802,
+        "completion_tokens": 799,
+        "total_tokens": 3601,
+        "cost": 0.0123199,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1114,
+          "cache_write_tokens": 1685,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0123199,
+          "upstream_inference_prompt_cost": 0.0043299,
+          "upstream_inference_completions_cost": 0.00799
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 120,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 1619,
+        "completion_tokens": 541,
+        "total_tokens": 2160,
+        "cost": 0.0067824,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1114,
+          "cache_write_tokens": 502,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0067824,
+          "upstream_inference_prompt_cost": 0.0013724,
+          "upstream_inference_completions_cost": 0.00541
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 2145,
+        "completion_tokens": 715,
+        "total_tokens": 2860,
+        "cost": 0.0098374,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1114,
+          "cache_write_tokens": 1028,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0098374,
+          "upstream_inference_prompt_cost": 0.0026874,
+          "upstream_inference_completions_cost": 0.00715
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 3695,
+        "completion_tokens": 740,
+        "total_tokens": 4435,
+        "cost": 0.0139624,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1114,
+          "cache_write_tokens": 2578,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0139624,
+          "upstream_inference_prompt_cost": 0.0065624,
+          "upstream_inference_completions_cost": 0.0074
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 60,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 2227,
+        "completion_tokens": 709,
+        "total_tokens": 2936,
+        "cost": 0.0099824,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1114,
+          "cache_write_tokens": 1110,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0099824,
+          "upstream_inference_prompt_cost": 0.0028924,
+          "upstream_inference_completions_cost": 0.00709
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ],
+    "total_cost": 0.09701927500000002
+  },
+  "repeat": {
+    "execution_id": "402194",
+    "normalized": 71,
+    "unseen": 0,
+    "ai_calls": 0,
+    "publications": 0
+  },
+  "recent_context": {
+    "executionId": "402197",
+    "status": "success",
+    "recent": [
+      {
+        "story_key": "news-0c657917ae7747fd",
+        "title": "Дератизация в шестте района на Пловдив: не паркирайте върху шахтите в дните за обработка",
+        "excerpt": "Общината обяви график за обработките от 5 до 10 октомври. Екипите се нуждаят от достъп до дъждоприемните шахти между 8:00 и 15:30 ч.",
+        "published_at": "2026-10-03T10:43:35.085Z",
+        "emdash_id": "01M40NS6VMZ3K6MN1K60VT5T75"
+      },
+      {
+        "story_key": "news-02ee05d261ef7723",
+        "title": "Slash и Skillet идват на Hills of Rock 2027, билетите вече се продават",
+        "excerpt": "Първите шест участници са потвърдени за осмото издание на фестивала на Гребната база от 23 до 25 юли. Тридневните билети са на цени от 140 евро, а еднодневните — от 99 евро.",
+        "published_at": "2026-10-03T10:44:20.846Z",
+        "emdash_id": "01M40NTM19WT9P2BW416PXP1AB"
+      },
+      {
+        "story_key": "news-dc618d54d4c0a879",
+        "title": "Благотворителен „Крос-Воаяж“ на Гребната база в подкрепа на безплатни прегледи",
+        "excerpt": "Инициативата на „STOP CANCER“ е насрочена за 3 октомври до Кулата. Събраните средства са предназначени за профилактика, здравни кампании и подкрепа за пациенти и семействата им.",
+        "published_at": "2026-10-03T10:43:13.024Z",
+        "emdash_id": "01M40NRJ1SJFTP2Q46WREYG27B"
+      },
+      {
+        "story_key": "news-3f3ecafb4c040b47",
+        "title": "Отстраниха изтичането на газ от цистерна на гарата в Карлово",
+        "excerpt": "Аварията спря бързия влак София–Бургас на гара „Христо Даново“. По последната предоставена информация се очаква възстановяване на движението му.",
+        "published_at": "2026-10-03T10:48:35.628Z",
+        "emdash_id": "01M40NMR4R1Q43DCTE84BAGE6K"
+      },
+      {
+        "story_key": "news-f6ca91b3b9175c6d",
+        "title": "Трима са обвинени за препродажба на лизингови коли, изземвани после от купувачите",
+        "excerpt": "След шестмесечно разследване са документирани три сделки за автомобили на стойност между 10 000 и 30 000 евро. Полицията продължава да търси потърпевши купувачи.",
+        "published_at": "2026-10-03T10:42:25.733Z",
+        "emdash_id": "01M40NQ3HFWC52TYV06KAH579F"
+      },
+      {
+        "story_key": "news-0d54e899318fc04d",
+        "title": "„Капана фест“ при площад „Централен“: базар до 4 октомври и концерти на 9–11 октомври",
+        "excerpt": "Есенното издание обхваща два уикенда. Приходите от благотворителните билети за вечерите на 9 и 10 октомври ще подкрепят три кампании за деца в нужда.",
+        "published_at": "2026-10-03T10:44:45.106Z",
+        "emdash_id": "01M40NVBZFBTVAW2BF487ZBFKY"
+      },
+      {
+        "story_key": "news-454b1bb2180191e5",
+        "title": "На 4 октомври прокуратурата ще поиска постоянен арест за обвиняемия за убийството на Илиян Филипов",
+        "excerpt": "51-годишният мъж е обвинен в предумишлено убийство и е арестуван в София на 30 септември. Разследващите проверяват и евентуална съпричастност на други лица.",
+        "published_at": "2026-10-03T10:51:04.167Z",
+        "emdash_id": "01M40NPAN1NA4AN0YV34HRQV58"
+      },
+      {
+        "story_key": "news-45e0471734575f97",
+        "title": "Безплатни УНГ прегледи в УМБАЛ „Свети Георги“ от 5 до 9 октомври",
+        "excerpt": "Прегледите са за профилактика на злокачествени заболявания и ще се провеждат в База 2 на бул. „Пещерско шосе“ № 66. Необходимо е предварително записване.",
+        "published_at": "2026-10-03T10:43:57.610Z",
+        "emdash_id": "01M40NSXHTCASA16G3AV5AKS9V"
+      },
+      {
+        "story_key": "news-8347d68b8694e2ae",
+        "title": "Четири години затвор за шофьор, причинил смъртта на дете",
+        "excerpt": "Окръжният съд в Пловдив е наложил и седем години лишаване от право да управлява автомобил, съобщава Plovdiv24.",
+        "published_at": "2026-10-03T10:42:47.541Z",
+        "emdash_id": "01M40NQS1W8Q72ARFPSR70NTPZ"
+      },
+      {
+        "story_key": "news-182f53d4124d0e41",
+        "title": "Шофьор загина при сблъсък на джип и бетоновоз край Раковски",
+        "excerpt": "Катастрофата е на пътя Раковски – Стряма. За смъртта на водача съобщава Plovdiv24.",
+        "published_at": "2026-10-03T10:41:36.396Z",
+        "emdash_id": "01M40NNHTX454H4HYR6QGY002V"
+      }
+    ],
+    "candidate_count": 1,
+    "ai_calls": 0
+  },
+  "corrections": [
+    {
+      "execution_id": "402180",
+      "story_key": "news-3f3ecafb4c040b47",
+      "result": {
+        "success": true,
+        "action": "updated",
+        "story_key": "news-3f3ecafb4c040b47",
+        "emdash_id": "01M40NMR4R1Q43DCTE84BAGE6K",
+        "slug": "газ-изтича-от-цистерна-на-гарата-в-карлово-влакът-софиябургас-е-спрян",
+        "status": "published",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D0%B3%D0%B0%D0%B7-%D0%B8%D0%B7%D1%82%D0%B8%D1%87%D0%B0-%D0%BE%D1%82-%D1%86%D0%B8%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%B0-%D0%BD%D0%B0-%D0%B3%D0%B0%D1%80%D0%B0%D1%82%D0%B0-%D0%B2-%D0%BA%D0%B0%D1%80%D0%BB%D0%BE%D0%B2%D0%BE-%D0%B2%D0%BB%D0%B0%D0%BA%D1%8A%D1%82-%D1%81%D0%BE%D1%84%D0%B8%D1%8F%D0%B1%D1%83%D1%80%D0%B3%D0%B0%D1%81-%D0%B5-%D1%81%D0%BF%D1%80%D1%8F%D0%BD/"
+      },
+      "writer_usage": {
+        "prompt_tokens": 2038,
+        "completion_tokens": 627,
+        "total_tokens": 2665,
+        "cost": 0.0113635,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2035,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0113635,
+          "upstream_inference_prompt_cost": 0.0050935,
+          "upstream_inference_completions_cost": 0.00627
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 174,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "execution_id": "402190",
+      "story_key": "news-454b1bb2180191e5",
+      "result": {
+        "success": true,
+        "action": "updated",
+        "story_key": "news-454b1bb2180191e5",
+        "emdash_id": "01M40NPAN1NA4AN0YV34HRQV58",
+        "slug": "прокуратурата-ще-поиска-постоянен-арест-за-обвиняемия-за-убийството-на-илиян-фил",
+        "status": "published",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D0%BF%D1%80%D0%BE%D0%BA%D1%83%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0%D1%82%D0%B0-%D1%89%D0%B5-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B5%D0%BD-%D0%B0%D1%80%D0%B5%D1%81%D1%82-%D0%B7%D0%B0-%D0%BE%D0%B1%D0%B2%D0%B8%D0%BD%D1%8F%D0%B5%D0%BC%D0%B8%D1%8F-%D0%B7%D0%B0-%D1%83%D0%B1%D0%B8%D0%B9%D1%81%D1%82%D0%B2%D0%BE%D1%82%D0%BE-%D0%BD%D0%B0-%D0%B8%D0%BB%D0%B8%D1%8F%D0%BD-%D1%84%D0%B8%D0%BB/"
+      }
+    }
+  ],
+  "limitations": [
+    "No browser surface available; reviews used live HTML, CMS reads and source context.",
+    "Police endpoint returns HTTP 403 from n8n; five other sources ingest.",
+    "No images, social, English, Weekend workflow or indexing."
+  ],
+  "activation": {
+    "active": true,
+    "settings": {
+      "executionOrder": "v1",
+      "timezone": "Europe/Sofia",
+      "saveDataErrorExecution": "all",
+      "saveDataSuccessExecution": "all",
+      "saveManualExecutions": true,
+      "saveExecutionProgress": false,
+      "executionTimeout": 720,
+      "availableInMCP": true
+    },
+    "schedule": {
+      "main": [
+        [
+          {
+            "node": "Source registry",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "nodeCount": 34,
+    "holdNodePresent": false
+  },
+  "schedule_path": {
+    "executionId": "402202",
+    "status": "success",
+    "mode": "production, explicitly started through MCP",
+    "nodes": {
+      "Every 15 minutes": {
+        "input": 0,
+        "output": 1
+      },
+      "Source registry": {
+        "input": 0,
+        "output": 7
+      },
+      "Fetch indexes": {
+        "input": 0,
+        "output": 7
+      },
+      "Normalize candidates": {
+        "input": 0,
+        "output": 71
+      },
+      "Unseen URLs": {
+        "input": 0,
+        "output": 0
+      }
+    }
+  },
+  "articles": [
+    {
+      "id": "01M40NVBZFBTVAW2BF487ZBFKY",
+      "story_key": "news-0d54e899318fc04d",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/капана-фест-при-площад-централен-базар-до-4-октомври-и-концерти-на-911-октомври",
+      "title": "„Капана фест“ при площад „Централен“: базар до 4 октомври и концерти на 9–11 октомври",
+      "excerpt": "Есенното издание обхваща два уикенда. Приходите от благотворителните билети за вечерите на 9 и 10 октомври ще подкрепят три кампании за деца в нужда.",
+      "body": "Есенното издание на „Капана фест 2026“ започна на 2 октомври при площад „Централен“ в Пловдив. Програмата е разделена в два уикенда — 2–4 и 9–11 октомври, съобщава БТА, позовавайки се на организатора Никола Сивков.\n\nДо 4 октомври базар „Капана“ предлага авторски изделия от подбрани участници. Първият уикенд е в по-компактен формат, съобразен с останалите събития около площада.\n\nПосетителите могат да съчетаят базара с пловдивската „Алея на книгата“, която продължава до 4 октомври, и със Station Street Festival, който се провежда от 2 до 4 октомври. Екипите на трите събития координират популяризирането им.\n\nОт 9 до 11 октомври фестивалът продължава с концерти, гостуване на Мона и благотворителни вечери в подкрепа на деца и семейството на Георги Узунов — Блейзи. По информация на организаторите приходите от благотворителните билети за вечерите на 9 и 10 октомври ще бъдат дарени за три кампании за деца в нужда. Кампаниите ще бъдат представени на сайта на фестивала.\n\nНа фестивалната локация за първи път се използват нови саксии с вградени пейки и пилони за лампички, флагчета и сезонна украса, реализирани съвместно с Община Пловдив. Според Сивков замисълът е съоръженията да останат за гражданите и след събитието, осигурявайки повече зеленина и места за сядане.\n\n„Капана фест“ се провежда с подкрепата на Община Пловдив и е част от Културния календар на града за 2026 година.",
+      "source_name": "БТА",
+      "source_url": "https://www.bta.bg/bg/news/bulgaria/regional-news/oblast-plovdiv/1216445-v-plovdiv-zapochva-esennoto-izdanie-na-kapana-fest-2026-",
+      "published_at": "2026-10-03T10:44:43.694Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/"
+        ],
+        "location": [
+          "/rayoni/plovdiv/",
+          "/rayoni/tsentralen/"
+        ]
+      },
+      "category": "kultura",
+      "locations": [
+        "plovdiv",
+        "tsentralen"
+      ]
+    },
+    {
+      "id": "01M40NTM19WT9P2BW416PXP1AB",
+      "story_key": "news-02ee05d261ef7723",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/slash-и-skillet-идват-на-hills-of-rock-2027-билетите-вече-се-продават",
+      "title": "Slash и Skillet идват на Hills of Rock 2027, билетите вече се продават",
+      "excerpt": "Първите шест участници са потвърдени за осмото издание на фестивала на Гребната база от 23 до 25 юли. Тридневните билети са на цени от 140 евро, а еднодневните — от 99 евро.",
+      "body": "Slash ft. Myles Kennedy and The Conspirators и Skillet са сред първите шест потвърдени участници в Hills of Rock 2027. Осмото издание на фестивала ще се проведе от 23 до 25 юли на Гребната база в Пловдив, съобщиха от общината.\n\nОрганизаторите от Fest Team обявиха още Make Them Suffer, Left To Suffer, Die Krupps и Atreyu. Останалите имена в програмата ще бъдат представяни на етапи през следващите месеци.\n\nПромоционалните билети са изчерпани. Стандартните вече се продават в мрежата на Ticket Station на цени от 140 евро за трите дни и от 99 евро за един ден.\n\nПървите участници обхващат няколко направления в тежката музика: хард рока на Slash и мелодичния тежък звук на Skillet, метълкора на Atreyu и Make Them Suffer, деткора на Left To Suffer и индъстриъла на Die Krupps.\n\nФестивалът се организира от „Фест Тийм“ ООД като част от програмата „Наследство 2023“ на Фондация „Пловдив 2019“, с подкрепата на Община Пловдив. Информация за следващите анонси ще има на hillsofrock.com, festteam.bg и ticketstation.bg, както и в официалните профили на фестивала и организаторите.",
+      "source_name": "Община Пловдив",
+      "source_url": "https://www.plovdiv.bg/hills-of-rock-obyavyava-parvite-shest-imena-za-2027-slash-ft-myles-kennedy-and-the-conspirators-skillet-make-them-suffer-left-to-suffer-die-krupps-i-atreyu-idvat-za-osmoto-izdanie-na-festivala-ot-23-d/",
+      "published_at": "2026-10-03T10:44:19.441Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/"
+        ],
+        "location": [
+          "/rayoni/plovdiv/"
+        ]
+      },
+      "category": "kultura",
+      "locations": [
+        "plovdiv"
+      ]
+    },
+    {
+      "id": "01M40NSXHTCASA16G3AV5AKS9V",
+      "story_key": "news-45e0471734575f97",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/безплатни-унг-прегледи-в-умбал-свети-георги-от-5-до-9-октомври",
+      "title": "Безплатни УНГ прегледи в УМБАЛ „Свети Георги“ от 5 до 9 октомври",
+      "excerpt": "Прегледите са за профилактика на злокачествени заболявания и ще се провеждат в База 2 на бул. „Пещерско шосе“ № 66. Необходимо е предварително записване.",
+      "body": "УМБАЛ „Свети Георги“ в Пловдив организира безплатни профилактични прегледи за злокачествени заболявания на ушите, носа и гърлото от 5 до 9 октомври 2026 г. Те са част от кампанията „Здраве за всички“, съобщава БТА, позовавайки се на пресцентъра на болницата.\n\nСпециалистите ще преглеждат от 10:00 до 13:00 часа в Клиниката по УНГ болести на шестия етаж в База 2, бул. „Пещерско шосе“ № 66. Записването е предварително на телефон 032 602 040, в делнични дни между 8:00 и 16:00 часа.\n\nКампанията е насочена към ранното откриване и лечение на злокачествени заболявания, включително на ларинкса, гърлото, устната кухина, носа, синусите и ухото.\n\nОт болницата посочват, че консултация със специалист без отлагане изискват пресипналост, продължаваща повече от 20 дни; затруднено носно дишане, съчетано с намален слух и увеличени шийни лимфни възли; затруднено преглъщане и усещане за чуждо тяло в гърлото; непреминаващи ранички и образувания в устната кухина.\n\nСпоред лечебното заведение сред основните рискови фактори са редовната употреба на тютюн и алкохол, лошото състояние на зъбите, недобрата устна хигиена и непълноценното хранене.",
+      "source_name": "БТА",
+      "source_url": "https://www.bta.bg/bg/news/bulgaria/regional-news/oblast-plovdiv/1216269-umbal-sveti-georgi-v-plovdiv-organizira-bezplatni-profilaktichni-pregledi-za-z",
+      "published_at": "2026-10-03T10:43:56.267Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/"
+        ],
+        "location": [
+          "/rayoni/plovdiv/"
+        ]
+      },
+      "category": "plovdiv",
+      "locations": [
+        "plovdiv"
+      ]
+    },
+    {
+      "id": "01M40NS6VMZ3K6MN1K60VT5T75",
+      "story_key": "news-0c657917ae7747fd",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/дератизация-в-шестте-района-на-пловдив-не-паркирайте-върху-шахтите-в-дните-за-об",
+      "title": "Дератизация в шестте района на Пловдив: не паркирайте върху шахтите в дните за обработка",
+      "excerpt": "Общината обяви график за обработките от 5 до 10 октомври. Екипите се нуждаят от достъп до дъждоприемните шахти между 8:00 и 15:30 ч.",
+      "body": "Есенната дератизация в Пловдив започва на 5 октомври 2026 г. при благоприятно време, съобщиха от общината. Екипите на ОП „Дезинфекционна станция“ ще поставят препарат срещу гризачи в уличните дъждоприемни шахти във всичките шест района.\n\nОт предприятието призовават жителите по възможност да не паркират автомобилите си върху шахтите между 8:00 и 15:30 ч. в деня за обработка на съответния район, за да осигурят достъп на екипите.\n\nГрафик по райони\n\n5 октомври — „Централен“\n\n6 октомври — „Централен“ и „Източен“\n\n7 октомври — „Тракия“\n\n8 октомври — „Западен“\n\n9 октомври — „Южен“\n\n10 октомври — „Северен“\n\nОбщината посочва общ период за кампанията от 5 до 12 октомври, а публикуваният график по райони обхваща дните до 10 октомври. Обработките зависят от метеорологичните условия.",
+      "source_name": "Община Пловдив",
+      "source_url": "https://www.plovdiv.bg/zapochva-esennata-deratizatsiya-v-plovdiv/",
+      "published_at": "2026-10-03T10:43:33.771Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/"
+        ],
+        "location": [
+          "/rayoni/zapaden/",
+          "/rayoni/iztochen/",
+          "/rayoni/plovdiv/",
+          "/rayoni/severen/",
+          "/rayoni/trakia/",
+          "/rayoni/tsentralen/",
+          "/rayoni/yuzhen/"
+        ]
+      },
+      "category": "plovdiv",
+      "locations": [
+        "plovdiv",
+        "tsentralen",
+        "iztochen",
+        "trakia",
+        "zapaden",
+        "yuzhen",
+        "severen"
+      ]
+    },
+    {
+      "id": "01M40NRJ1SJFTP2Q46WREYG27B",
+      "story_key": "news-dc618d54d4c0a879",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/благотворителен-крос-воаяж-на-гребната-база-в-подкрепа-на-безплатни-прегледи",
+      "title": "Благотворителен „Крос-Воаяж“ на Гребната база в подкрепа на безплатни прегледи",
+      "excerpt": "Инициативата на „STOP CANCER“ е насрочена за 3 октомври до Кулата. Събраните средства са предназначени за профилактика, здравни кампании и подкрепа за пациенти и семействата им.",
+      "body": "Благотворителният „Крос-Воаяж“ на сдружение „STOP CANCER“ е насрочен за 3 октомври на Гребната база в Пловдив, до Кулата. Каузата е ранната диагностика на онкологичните заболявания, съобщиха от Областната администрация.\n\nФорматът е отворен не само за бегачи. Организаторите канят и хора, които предпочитат да карат колело или ролери, както и да се включат с разходка. Събитието отбелязва десетата годишнина от създаването на сдружението.\n\nВсички събрани средства ще бъдат насочени към безплатни скринингови и профилактични прегледи, информационни кампании за здравословен живот и хранене и психологическа и емоционална подкрепа за пациенти и техните семейства.\n\nПо обявената програма денят включва:\n\n10:00 ч. — регистрация и получаване на стартови пакети, загрявка с инструктори, консултации със специалисти и благотворителен базар.\n\n11:30 ч. — официален старт, предвиден да бъде даден от областния управител Георги Янев и заместник-кмета по спорт и младежки дейности Николай Бухалов.\n\n11:35 ч. — преминаване по трасето със спирки за хидратация, арт алея до и на моста и зони за снимки.\n\n13:00 ч. — финална програма с медали за участие, благотворително тракийско хоро и томбола.\n\nОрганизаторите предвиждат регистрация и на място в деня на събитието. Участниците могат да получат тениска и светеща гривна, а желаещите да помогнат като доброволци — да се включат в екипа по трасето.",
+      "source_name": "Областна администрация Пловдив",
+      "source_url": "https://pd.government.bg/?p=44250",
+      "published_at": "2026-10-03T10:43:11.638Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/"
+        ],
+        "location": [
+          "/rayoni/plovdiv/"
+        ]
+      },
+      "category": "plovdiv",
+      "locations": [
+        "plovdiv"
+      ]
+    },
+    {
+      "id": "01M40NQS1W8Q72ARFPSR70NTPZ",
+      "story_key": "news-8347d68b8694e2ae",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/четири-години-затвор-за-шофьор-причинил-смъртта-на-дете",
+      "title": "Четири години затвор за шофьор, причинил смъртта на дете",
+      "excerpt": "Окръжният съд в Пловдив е наложил и седем години лишаване от право да управлява автомобил, съобщава Plovdiv24.",
+      "body": "Окръжният съд в Пловдив е постановил четири години ефективен затвор за шофьор, причинил смъртта на дете, съобщава Plovdiv24.\n\nНаказанието е при първоначален общ режим. Съдът е наложил и седем години лишаване от право да управлява автомобил.",
+      "source_name": "Plovdiv24",
+      "source_url": "https://www.plovdiv24.bg/novini/plovdiv/Okruzhen-sud-Plovdiv-Chetiri-godini-zatvor-za-shofyora-prichinil-tragediya-sus-zaginalo-dete-3033826",
+      "published_at": "2026-10-03T10:42:46.190Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/",
+          "/kriminalni/"
+        ],
+        "location": [
+          "/rayoni/plovdiv/"
+        ]
+      },
+      "category": "kriminalni",
+      "locations": [
+        "plovdiv"
+      ]
+    },
+    {
+      "id": "01M40NQ3HFWC52TYV06KAH579F",
+      "story_key": "news-f6ca91b3b9175c6d",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/трима-са-обвинени-за-препродажба-на-лизингови-коли-изземвани-после-от-купувачите",
+      "title": "Трима са обвинени за препродажба на лизингови коли, изземвани после от купувачите",
+      "excerpt": "След шестмесечно разследване са документирани три сделки за автомобили на стойност между 10 000 и 30 000 евро. Полицията продължава да търси потърпевши купувачи.",
+      "body": "Трима мъже на 62, 52 и 29 години са привлечени като обвиняеми за схема с препродажба на лизингови автомобили от чужбина. Колите били регистрирани и продавани в България, но впоследствие обявявани за издирване и изземвани от новите им собственици. Това съобщава БТА по информация на ОДМВР-Пловдив.\n\nМъжете са арестувани на 1 октомври след шестмесечно разследване на отдел „Противодействие на икономическата престъпност“. При акцията са претърсени техни адреси и ползвани помещения в Пловдив, Асеновград и Кърджали.\n\nСпоред разследващите тримата се сдобивали с автомобили от държави в Западна Европа, регистрирали ги в България и ги предлагали на привлекателни цени чрез интернет обяви или фиктивни посредници.\n\nСлед спиране на вноските към чуждестранните лизингови компании автомобилите били обявявани за издирване в Шенгенската информационна система. Това налагало полицията да ги изземе от купувачите, които не знаели за схемата.\n\nДо момента са документирани три такива сделки за автомобили на стойност между 10 000 и 30 000 евро. Работата по установяване на други потърпевши продължава.\n\nПри претърсванията са иззети договори за покупко-продажба, пълномощни, празни бланки за регистрация на МПС, регистрационни талони и български и чуждестранни регистрационни табели.\n\nС постановление на прокурор от Районна прокуратура – Пловдив 52-годишният обвиняем е задържан за срок до 72 часа. На другите двама е наложена мярка „парична гаранция“.",
+      "source_name": "БТА",
+      "source_url": "https://www.bta.bg/bg/news/bulgaria/regional-news/oblast-plovdiv/1216763-arestuvaha-trima-mazhe-uchastvali-v-shema-za-preprodazhba-na-lizingovi-avtomobi",
+      "published_at": "2026-10-03T10:42:24.186Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/",
+          "/kriminalni/"
+        ],
+        "location": [
+          "/rayoni/asenovgrad/",
+          "/rayoni/plovdiv/"
+        ]
+      },
+      "category": "kriminalni",
+      "locations": [
+        "plovdiv",
+        "asenovgrad"
+      ]
+    },
+    {
+      "id": "01M40NPAN1NA4AN0YV34HRQV58",
+      "story_key": "news-454b1bb2180191e5",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/прокуратурата-ще-поиска-постоянен-арест-за-обвиняемия-за-убийството-на-илиян-фил",
+      "title": "На 4 октомври прокуратурата ще поиска постоянен арест за обвиняемия за убийството на Илиян Филипов",
+      "excerpt": "51-годишният мъж е обвинен в предумишлено убийство и е арестуван в София на 30 септември. Разследващите проверяват и евентуална съпричастност на други лица.",
+      "body": "Окръжната прокуратура в Пловдив ще внесе на 4 октомври искане в съда за „задържане под стража“ на 51-годишния С.М., обвинен в предумишленото убийство на пловдивския бизнесмен Илиян Филипов. Това съобщава БТА, позовавайки се на държавното обвинение.\n\nУбийството е извършено на 30 септември. Според събраните до момента доказателства, посочени от прокуратурата, около 1:00 ч. в жилищна кооперация обвиняемият е прострелял Филипов с огнестрелно оръжие. След сигнал на телефон 112 на място са пристигнали полицейски и медицински екипи, които са констатирали смъртта му.\n\nС.М. е арестуван в София вечерта на същия ден. Двамата са се познавали. По първоначални данни на прокуратурата предполагаемият мотив е свързан с неуредени финансови отношения между тях.\n\nРазследващите са извършили огледи на местопроизшествието, имоти, жилищни сгради и автомобили. Иззети са веществени доказателства, част от които се изследват в рамките на назначени експертизи.\n\nПрокуратурата съобщава, че се работи по различни версии, включително за евентуална съпричастност на други лица към престъплението.",
+      "source_name": "БТА",
+      "source_url": "https://www.bta.bg/bg/news/bulgaria/regional-news/oblast-plovdiv/1216306-okrazhna-prokuratura-plovdiv-shte-vnese-iskane-v-sada-za-zadarzhane-na-obvinya",
+      "published_at": "2026-10-03T10:41:58.537Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/",
+          "/kriminalni/"
+        ],
+        "location": [
+          "/rayoni/plovdiv/"
+        ]
+      },
+      "category": "kriminalni",
+      "locations": [
+        "plovdiv"
+      ]
+    },
+    {
+      "id": "01M40NNHTX454H4HYR6QGY002V",
+      "story_key": "news-182f53d4124d0e41",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/шофьор-загина-при-сблъсък-на-джип-и-бетоновоз-край-раковски",
+      "title": "Шофьор загина при сблъсък на джип и бетоновоз край Раковски",
+      "excerpt": "Катастрофата е на пътя Раковски – Стряма. За смъртта на водача съобщава Plovdiv24.",
+      "body": "Водачът на джип е загинал при катастрофа с бетоновоз на пътя Раковски – Стряма, съобщава Plovdiv24.\n\nМедията публикува първоначална информация за сблъсъка на 2 октомври, а по-късно същия ден съобщи, че произшествието е отнело живота на шофьора.",
+      "source_name": "Plovdiv24",
+      "source_url": "https://www.plovdiv24.bg/novini/regionalni/Zagina-shofyorut-na-dzhipa-sbluskal-se-s-betonovoz-krai-Rakovski-3033928",
+      "published_at": "2026-10-03T10:41:34.926Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/"
+        ],
+        "location": [
+          "/rayoni/oblast-plovdiv/",
+          "/rayoni/rakovski/"
+        ]
+      },
+      "category": "trafik",
+      "locations": [
+        "oblast-plovdiv",
+        "rakovski"
+      ]
+    },
+    {
+      "id": "01M40NMR4R1Q43DCTE84BAGE6K",
+      "story_key": "news-3f3ecafb4c040b47",
+      "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/газ-изтича-от-цистерна-на-гарата-в-карлово-влакът-софиябургас-е-спрян",
+      "title": "Отстраниха изтичането на газ от цистерна на гарата в Карлово",
+      "excerpt": "Аварията спря бързия влак София–Бургас на гара „Христо Даново“. По последната предоставена информация се очаква възстановяване на движението му.",
+      "body": "Изтичането на газ от цистерна на гарата в Карлово е отстранено от екип на фирмата собственик на товарната композиция. Това съобщава БТА на 3 октомври, позовавайки се на пресцентъра на Областната дирекция на МВР в Пловдив.\n\nЗаради аварията бързият влак от София за Бургас беше спрян на гара „Христо Даново“. В съобщението се посочва, че се очаква възстановяване на движението му, но няма потвърждение, че той е потеглил, нито час за продължаване на пътуването.\n\nСигналът за мирис на газ е постъпил към 4:15 ч. на 3 октомври. Цистерната е била част от товарна композиция на страничен коловоз в района на гарата в Карлово.\n\nСлужители на Районното управление на МВР в Карлово са отцепили и обезопасили района след сигнала.",
+      "source_name": "БТА",
+      "source_url": "https://www.bta.bg/bg/news/bulgaria/regional-news/oblast-plovdiv/1216981-avariyata-na-iztichane-na-gaz-ot-tsisterna-na-garata-v-karlovo-e-ostranena",
+      "published_at": "2026-10-03T10:41:11.861Z",
+      "checks": {
+        "one_h1": true,
+        "one_newsarticle": true,
+        "noindex": true,
+        "byline": true,
+        "source": true,
+        "no_image": true,
+        "body": true,
+        "category_breadcrumb": true,
+        "all_assigned_locations": true
+      },
+      "links": {
+        "category": [
+          "/plovdiv/",
+          "/biznes/",
+          "/kultura/",
+          "/trafik/",
+          "/oblast-plovdiv/",
+          "/sport/",
+          "/uikend/",
+          "/bulgaria/"
+        ],
+        "location": [
+          "/rayoni/karlovo/"
+        ]
+      },
+      "category": "oblast-plovdiv",
+      "locations": [
+        "karlovo"
+      ]
+    }
+  ],
+  "publisher_unchanged": {
+    "live_parameters_match_repository": true,
+    "live_connections_match_repository": true,
+    "nodes": 6
+  },
+  "validation": {
+    "focused_tests_passed": 22,
+    "n8n_errors": 0,
+    "n8n_expected_warnings": 3
+  }
+}

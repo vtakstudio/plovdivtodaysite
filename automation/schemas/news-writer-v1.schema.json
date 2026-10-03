@@ -1,0 +1,132 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "write",
+    "reason",
+    "title",
+    "excerpt",
+    "category",
+    "locations",
+    "blocks",
+    "source_name",
+    "source_url",
+    "featured",
+    "breaking"
+  ],
+  "properties": {
+    "write": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "excerpt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "category": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "plovdiv",
+        "trafik",
+        "oblast-plovdiv",
+        "kriminalni",
+        "biznes",
+        "kultura",
+        "sport",
+        "bulgaria",
+        "uikend",
+        null
+      ]
+    },
+    "locations": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "plovdiv",
+          "tsentralen",
+          "trakia",
+          "yuzhen",
+          "severen",
+          "zapaden",
+          "iztochen",
+          "oblast-plovdiv",
+          "asenovgrad",
+          "karlovo",
+          "hisarya",
+          "rakovski"
+        ]
+      }
+    },
+    "blocks": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "text"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "paragraph",
+              "heading",
+              "bullet"
+            ]
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "featured": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "breaking": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    }
+  }
+}

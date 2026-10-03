@@ -1,0 +1,99 @@
+{
+  "story_key": "automation-smoke-plovdiv-001",
+  "title": "ТЕСТ n8n: Проверка на publisher-а за Пловдив",
+  "excerpt": "Временен технически материал. Не описва реална новина и ще бъде преместен в кошчето след проверката.",
+  "content": [
+    {
+      "_type": "block",
+      "_key": "intro",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "intro-text",
+          "text": "Това е временна проверка на publisher v1, без реално новинарско твърдение.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "heading",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "heading-text",
+          "text": "Какво проверяваме",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "list-one",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "list-one-text",
+          "text": "Чернова, категории и авторски подпис",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "list-two",
+      "style": "normal",
+      "listItem": "bullet",
+      "level": 1,
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "list-two-text",
+          "text": "Публикуване и обновяване на същата статия",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "source-link",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "official-link",
+          "href": "https://www.plovdiv.bg/"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "link-text",
+          "text": "Официален сайт на община Пловдив",
+          "marks": [
+            "official-link"
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "plovdiv",
+  "locations": [
+    "tsentralen"
+  ],
+  "source_name": "Техническа проверка на PlovdivToday",
+  "source_url": "https://www.plovdiv.bg/",
+  "featured": false,
+  "breaking": false,
+  "featured_image": null,
+  "publish_mode": "draft"
+}

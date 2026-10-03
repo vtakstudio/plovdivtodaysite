@@ -1,0 +1,206 @@
+{
+  "transport": "Manual terminal run of the exact publisher state machine against production REST using setup OAuth; actual n8n runtime executions are still pending",
+  "id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+  "url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%82%D0%BE-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/",
+  "evidence": [
+    {
+      "name": "identical-payload",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "slug": "тест-проверка-на-автоматичното-публикуване-в-пловдив",
+        "status": "draft",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%82%D0%BE-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "name": "category",
+      "passed": true,
+      "detail": [
+        {
+          "slug": "trafik",
+          "id": "01M3W74SX81EC59GATDGEEAW54"
+        }
+      ]
+    },
+    {
+      "name": "location",
+      "passed": true,
+      "detail": [
+        {
+          "slug": "tsentralen",
+          "id": "01M3W74VWQTABMDQS9BVS5RB5M"
+        }
+      ]
+    },
+    {
+      "name": "modified-draft-same-id",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "slug": "тест-проверка-на-автоматичното-публикуване-в-пловдив",
+        "status": "draft",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%82%D0%BE-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "name": "publish-public-render",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "slug": "тест-проверка-на-автоматичното-публикуване-в-пловдив",
+        "status": "published",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%82%D0%BE-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "name": "published-draft-preserves-live",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "slug": "тест-проверка-на-автоматичното-публикуване-в-пловдив",
+        "status": "draft",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%82%D0%BE-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "name": "republish-same-url-and-id",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "slug": "тест-проверка-на-автоматичното-публикуване-в-пловдив",
+        "status": "published",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%82%D0%BE-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/",
+        "datePublished": "2026-10-02T13:15:54.205Z",
+        "dateModifiedBefore": "2026-10-02T13:18:01.316Z",
+        "dateModifiedAfter": "2026-10-02T13:18:15.419Z"
+      }
+    },
+    {
+      "name": "native-stale-revision",
+      "passed": true,
+      "detail": {
+        "http": 409,
+        "code": "CONFLICT"
+      }
+    },
+    {
+      "name": "native-unique-key-rejection",
+      "passed": true,
+      "detail": {
+        "http": 500,
+        "code": "CONTENT_CREATE_ERROR"
+      }
+    },
+    {
+      "name": "same-owner-editor-lock-respected",
+      "passed": true,
+      "detail": {
+        "success": false,
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "code": "ENTRY_LOCKED",
+        "message": "An editor holds this entry; automation will not override the lock",
+        "retryable": true
+      }
+    },
+    {
+      "name": "one-article-final",
+      "passed": true,
+      "detail": [
+        {
+          "id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+          "slug": "тест-проверка-на-автоматичното-публикуване-в-пловдив"
+        }
+      ]
+    },
+    {
+      "name": "native-safe-update-retry",
+      "passed": true,
+      "result": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "slug": "тест-проверка-на-автоматичното-публикуване-в-пловдив",
+        "status": "draft",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%82%D0%BE-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "name": "native-safe-publish-retry",
+      "passed": true,
+      "result": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "slug": "тест-проверка-на-автоматичното-публикуване-в-пловдив",
+        "status": "published",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%82%D0%BE-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "name": "second-category-plovdiv",
+      "passed": true,
+      "terms": [
+        {
+          "id": "01M3W74SK4T1K1SSQ3G95KFY0V",
+          "slug": "plovdiv"
+        }
+      ]
+    },
+    {
+      "name": "native-substantive-conflict-no-overwrite",
+      "passed": true,
+      "result": {
+        "success": false,
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "code": "CONFLICT",
+        "message": "Entry changed substantively; refusing to overwrite or publish another editor’s changes",
+        "retryable": true
+      }
+    },
+    {
+      "name": "existing-media-reference-pass-through",
+      "passed": true,
+      "mediaId": "01M3Y665FMBYKZF90Q3XZAGQM8"
+    },
+    {
+      "name": "final-publish-readback-token-and-no-image",
+      "passed": true,
+      "result": {
+        "success": true,
+        "action": "updated",
+        "story_key": "automation-smoke-trafik-001",
+        "emdash_id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+        "slug": "тест-проверка-на-автоматичното-публикуване-в-пловдив",
+        "status": "published",
+        "public_url": "https://plovdivtodaysite.estudio-5ba.workers.dev/novini/%D1%82%D0%B5%D1%81%D1%82-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%82%D0%BE-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2/"
+      }
+    },
+    {
+      "name": "recoverable-trash-cleanup",
+      "passed": true,
+      "id": "01M3YBYF8DSAPMHQZFAPVTFFR1",
+      "activeArticles": 20,
+      "publicHttp": 404
+    }
+  ]
+}
